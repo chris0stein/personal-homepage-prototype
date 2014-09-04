@@ -1,0 +1,1635 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Commons Logged-In Homepage</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.ui.custom.js"></script>
+</head>
+<body>
+	<div class="navigation fixed">
+	<nav class="top-bar " data-topbar>
+	  <ul class="title-area">
+	    <li class="name">
+	      <!-- <h1><a href="#">My Site</a></h1> -->
+	    </li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+
+	  <section class="top-bar-section">
+	    <!-- Right Nav Section -->
+	    <ul class="left">
+	      <li class="has-dropdown">
+	        <a href="#">Cuny Academic Commons</a>
+	        <ul id="wp-admin-bar-cuny-academic-commons-default" class="dropdown ab-submenu">
+				<li id="wp-admin-bar-home"><a class="ab-item" href="http://commons.gc.cuny.edu">Home</a>		</li>
+				<li id="wp-admin-bar-people"><a class="ab-item" href="http://commons.gc.cuny.edu/members/">People</a>		</li>
+				<li id="wp-admin-bar-groups"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/">Groups</a>		</li>
+				<li id="wp-admin-bar-blogs"><a class="ab-item" href="http://commons.gc.cuny.edu/blogs/">Blogs</a>		</li>
+				<li id="wp-admin-bar-wiki"><a class="ab-item" href="http://commons.gc.cuny.edu/wiki/">Wiki</a>		</li>
+				<li id="wp-admin-bar-news"><a class="ab-item" href="http://commons.gc.cuny.edu/activity/">News</a>		</li>
+				<li id="wp-admin-bar-help"><a class="ab-item" href="http://help.commons.gc.cuny.edu/">Help</a>		</li>
+				<li id="wp-admin-bar-about" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/about/">About</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-about-default" class="ab-submenu">
+				<li id="wp-admin-bar-about-the-commons"><a class="ab-item" href="http://commons.gc.cuny.edu/about/about-the-commons/">About the Commons</a>		</li>
+				<li id="wp-admin-bar-contact-us"><a class="ab-item" href="http://commons.gc.cuny.edu/about/contact-us/">Contact Us</a>		</li>
+				<li id="wp-admin-bar-image-credits"><a class="ab-item" href="http://commons.gc.cuny.edu/about/images/">Image Credits</a>		</li>
+				<li id="wp-admin-bar-privacy-policy"><a class="ab-item" href="http://commons.gc.cuny.edu/about/privacy/">Privacy Policy</a>		</li>
+				<li id="wp-admin-bar-project-staff"><a class="ab-item" href="http://commons.gc.cuny.edu/about/project-staff/">Project Staff</a>		</li>
+				<li id="wp-admin-bar-terms-of-service"><a class="ab-item" href="http://commons.gc.cuny.edu/about/tos/">Terms of Service</a>		</li></ul></div>		</li>
+			s</ul>
+		   </li>
+		   <li class="divider"></li>
+			   <li class="has-form">
+		        <a href="index.html" class="small button ">Overview</a>
+		    	</li>
+		   <li class="has-form">
+	        <a href="activity-1.html" class="small button">Activity 1</a>
+	    	</li>
+	    	<li class="has-form">
+	        <a href="activity-2.html" class="small button alert">Activity 2</a>
+	    	</li>
+	    	<li class="has-form">
+	        <a href="separate-1.html" class="small button">Separate 1</a>
+	    	</li>
+	    	<li class="has-form">
+	        <a href="separate-2.html" class="small button">Separate 2</a>
+	    	</li>
+		</ul>
+
+		  </section>
+
+		  <section class="top-bar-section">
+		    <!-- Right Nav Section -->
+		    <ul class="right">
+		      <li class="divider"></li>
+		      <li class="active"><a href="more">0</a></li>
+		      <li class="divider"></li>
+		      <li class="has-dropdown">
+		        <a href="#"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-26 photo" width="26" height="26" alt="Avatar of Christopher Stein"></a>
+		        <ul id="wp-admin-bar-my-account-buddypress" class="dropdown ab-sub-secondary ab-submenu">
+					<li id="wp-admin-bar-my-account-activity" class="menupop has-dropdown">
+						<a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/activity/">My Activity</a>
+						<ul id="wp-admin-bar-my-account-activity-default" class="dropdown ab-submenu">
+							<li id="wp-admin-bar-my-account-activity-personal"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/activity/">Personal</a>		</li>
+							<li id="wp-admin-bar-my-account-activity-mentions"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/activity/mentions/">Mentions</a>		</li>
+							<li id="wp-admin-bar-my-account-activity-favorites"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/activity/favorites/">Favorites</a>		</li>
+							<li id="wp-admin-bar-my-account-activity-friends"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/activity/friends/">Friends</a>		</li>
+							<li id="wp-admin-bar-my-account-activity-groups"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/activity/groups/">Groups</a>		</li>
+						</ul>
+					</li>
+					<li id="wp-admin-bar-my-account-xprofile" class="menupop has-dropdown"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/profile/">My Profile</a>
+						<ul id="wp-admin-bar-my-account-xprofile-default" class="dropdown ab-submenu">
+							<li id="wp-admin-bar-my-account-xprofile-public"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/profile/public/">View</a>		</li>
+							<li id="wp-admin-bar-my-account-xprofile-edit"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/profile/edit/">Edit</a>		</li>
+							<li id="wp-admin-bar-my-account-xprofile-change-avatar"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/profile/change-avatar/">Change Avatar</a></li>
+						</ul>
+					</li>
+					<li id="wp-admin-bar-my-account-blogs" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/blogs/">My Sites</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-account-blogs-default" class="ab-submenu">
+					<li id="wp-admin-bar-my-account-blogs-create"><a class="ab-item" href="http://commons.gc.cuny.edu/blogs/create/">Create a Site</a>		</li></ul><ul id="wp-admin-bar-my-sites-super-admin" class="ab-submenu">
+					<li id="wp-admin-bar-network-admin" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/wp-admin/network/">Network Admin</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-network-admin-default" class="ab-submenu">
+					<li id="wp-admin-bar-network-admin-d"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/network/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-network-admin-s"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/network/sites.php">Sites</a>		</li>
+					<li id="wp-admin-bar-network-admin-u"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/network/users.php">Users</a>		</li>
+					<li id="wp-admin-bar-network-admin-t"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/network/themes.php">Themes</a>		</li>
+					<li id="wp-admin-bar-network-admin-p"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/network/plugins.php">Plugins</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-my-sites-list" class="ab-sub-secondary ab-submenu">
+					<li id="wp-admin-bar-blog-579" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://anotherchrishidden.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Another Chris hidden</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-579-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-579-d"><a class="ab-item" href="http://anotherchrishidden.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-579-n"><a class="ab-item" href="http://anotherchrishidden.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-579-c"><a class="ab-item" href="http://anotherchrishidden.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-579-v"><a class="ab-item" href="http://anotherchrishidden.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-542" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://bmccassessmentcommittee.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>BMCC Assessment Committee</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-542-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-542-d"><a class="ab-item" href="http://bmccassessmentcommittee.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-542-n"><a class="ab-item" href="http://bmccassessmentcommittee.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-542-c"><a class="ab-item" href="http://bmccassessmentcommittee.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-542-v"><a class="ab-item" href="http://bmccassessmentcommittee.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-1887" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://bmccesllab.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>BMCC ESL LAB</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-1887-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-1887-d"><a class="ab-item" href="http://bmccesllab.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-1887-n"><a class="ab-item" href="http://bmccesllab.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-1887-c"><a class="ab-item" href="http://bmccesllab.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-1887-v"><a class="ab-item" href="http://bmccesllab.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-778" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://communityteam.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>CAC Community Team - Project Planning</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-778-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-778-d"><a class="ab-item" href="http://communityteam.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-778-n"><a class="ab-item" href="http://communityteam.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-778-c"><a class="ab-item" href="http://communityteam.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-778-v"><a class="ab-item" href="http://communityteam.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-209" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://cs.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>cs</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-209-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-209-d"><a class="ab-item" href="http://cs.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-209-n"><a class="ab-item" href="http://cs.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-209-c"><a class="ab-item" href="http://cs.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-209-v"><a class="ab-item" href="http://cs.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-1" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>CUNY Academic Commons</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-1-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-1-d"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-1-n"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-1-c"><a class="ab-item" href="http://commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-1-v"><a class="ab-item" href="http://commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-259" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://christest.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>CUNY Hybrid Initiative</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-259-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-259-d"><a class="ab-item" href="http://christest.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-259-n"><a class="ab-item" href="http://christest.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-259-c"><a class="ab-item" href="http://christest.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-259-v"><a class="ab-item" href="http://christest.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-382" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://core1.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>CUNY ITP Core 1 Blog Fall 2010</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-382-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-382-d"><a class="ab-item" href="http://core1.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-382-n"><a class="ab-item" href="http://core1.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-382-c"><a class="ab-item" href="http://core1.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-382-v"><a class="ab-item" href="http://core1.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-73" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://cunypie.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>CUNY Pie</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-73-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-73-d"><a class="ab-item" href="http://cunypie.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-73-n"><a class="ab-item" href="http://cunypie.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-73-c"><a class="ab-item" href="http://cunypie.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-73-v"><a class="ab-item" href="http://cunypie.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-796" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://deletestein.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>delete blog stein</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-796-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-796-d"><a class="ab-item" href="http://deletestein.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-796-n"><a class="ab-item" href="http://deletestein.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-796-c"><a class="ab-item" href="http://deletestein.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-796-v"><a class="ab-item" href="http://deletestein.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-960" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://eportfolioandhighimpactpracticesconference.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>eportfolio and high impact practices</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-960-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-960-d"><a class="ab-item" href="http://eportfolioandhighimpactpracticesconference.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-960-n"><a class="ab-item" href="http://eportfolioandhighimpactpracticesconference.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-960-c"><a class="ab-item" href="http://eportfolioandhighimpactpracticesconference.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-960-v"><a class="ab-item" href="http://eportfolioandhighimpactpracticesconference.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-9" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://eportfolios.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>ePortfolios</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-9-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-9-d"><a class="ab-item" href="http://eportfolios.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-9-n"><a class="ab-item" href="http://eportfolios.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-9-c"><a class="ab-item" href="http://eportfolios.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-9-v"><a class="ab-item" href="http://eportfolios.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-1033" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://foofoo.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>foo</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-1033-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-1033-d"><a class="ab-item" href="http://foofoo.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-1033-n"><a class="ab-item" href="http://foofoo.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-1033-c"><a class="ab-item" href="http://foofoo.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-1033-v"><a class="ab-item" href="http://foofoo.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-609" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://foundphotos.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Found Photos</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-609-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-609-d"><a class="ab-item" href="http://foundphotos.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-609-n"><a class="ab-item" href="http://foundphotos.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-609-c"><a class="ab-item" href="http://foundphotos.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-609-v"><a class="ab-item" href="http://foundphotos.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-389" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://groundcontrol.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Ground Control</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-389-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-389-d"><a class="ab-item" href="http://groundcontrol.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-389-n"><a class="ab-item" href="http://groundcontrol.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-389-c"><a class="ab-item" href="http://groundcontrol.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-389-v"><a class="ab-item" href="http://groundcontrol.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-115" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://help.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Help and Support</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-115-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-115-d"><a class="ab-item" href="http://help.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-115-n"><a class="ab-item" href="http://help.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-115-c"><a class="ab-item" href="http://help.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-115-v"><a class="ab-item" href="http://help.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-580" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://hiddenchris.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>hidden chris</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-580-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-580-d"><a class="ab-item" href="http://hiddenchris.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-580-n"><a class="ab-item" href="http://hiddenchris.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-580-c"><a class="ab-item" href="http://hiddenchris.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-580-v"><a class="ab-item" href="http://hiddenchris.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-1020" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://hybrid.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Hybrid Initiative</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-1020-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-1020-d"><a class="ab-item" href="http://hybrid.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-1020-n"><a class="ab-item" href="http://hybrid.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-1020-c"><a class="ab-item" href="http://hybrid.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-1020-v"><a class="ab-item" href="http://hybrid.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-911" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://hybridinitiativeresourcebuildersgroup.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Hybrid Initiative Resource Builders Group</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-911-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-911-d"><a class="ab-item" href="http://hybridinitiativeresourcebuildersgroup.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-911-n"><a class="ab-item" href="http://hybridinitiativeresourcebuildersgroup.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-911-c"><a class="ab-item" href="http://hybridinitiativeresourcebuildersgroup.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-911-v"><a class="ab-item" href="http://hybridinitiativeresourcebuildersgroup.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-1290" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://core2spring2013.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Interactive Technology and the University: Core II</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-1290-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-1290-d"><a class="ab-item" href="http://core2spring2013.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-1290-n"><a class="ab-item" href="http://core2spring2013.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-1290-c"><a class="ab-item" href="http://core2spring2013.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-1290-v"><a class="ab-item" href="http://core2spring2013.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-539" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://itcpcore2spring2011.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>ITCP Core 2 Spring 2011</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-539-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-539-d"><a class="ab-item" href="http://itcpcore2spring2011.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-539-n"><a class="ab-item" href="http://itcpcore2spring2011.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-539-c"><a class="ab-item" href="http://itcpcore2spring2011.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-539-v"><a class="ab-item" href="http://itcpcore2spring2011.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-838" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://mobiletechresearchgroup.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Mobile Technology Research Group</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-838-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-838-d"><a class="ab-item" href="http://mobiletechresearchgroup.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-838-n"><a class="ab-item" href="http://mobiletechresearchgroup.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-838-c"><a class="ab-item" href="http://mobiletechresearchgroup.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-838-v"><a class="ab-item" href="http://mobiletechresearchgroup.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-877" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://higheredexecutivecertificate.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>School of Public Affairs Higher Education Executiv</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-877-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-877-d"><a class="ab-item" href="http://higheredexecutivecertificate.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-877-n"><a class="ab-item" href="http://higheredexecutivecertificate.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-877-c"><a class="ab-item" href="http://higheredexecutivecertificate.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-877-v"><a class="ab-item" href="http://higheredexecutivecertificate.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-7" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://cstein.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Tech in the Trenches</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-7-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-7-d"><a class="ab-item" href="http://cstein.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-7-n"><a class="ab-item" href="http://cstein.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-7-c"><a class="ab-item" href="http://cstein.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-7-v"><a class="ab-item" href="http://cstein.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-578" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://testchrisaddgroup.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>test adding group</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-578-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-578-d"><a class="ab-item" href="http://testchrisaddgroup.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-578-n"><a class="ab-item" href="http://testchrisaddgroup.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-578-c"><a class="ab-item" href="http://testchrisaddgroup.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-578-v"><a class="ab-item" href="http://testchrisaddgroup.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-blog-203" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://videoconferencing.commons.gc.cuny.edu/wp-admin/"><div class="blavatar"></div>Videoconferencing</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-203-default" class="ab-submenu">
+					<li id="wp-admin-bar-blog-203-d"><a class="ab-item" href="http://videoconferencing.commons.gc.cuny.edu/wp-admin/">Dashboard</a>		</li>
+					<li id="wp-admin-bar-blog-203-n"><a class="ab-item" href="http://videoconferencing.commons.gc.cuny.edu/wp-admin/post-new.php">New Post</a>		</li>
+					<li id="wp-admin-bar-blog-203-c"><a class="ab-item" href="http://videoconferencing.commons.gc.cuny.edu/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+					<li id="wp-admin-bar-blog-203-v"><a class="ab-item" href="http://videoconferencing.commons.gc.cuny.edu/">Visit Site</a>		</li></ul></div>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-my-account-notifications" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/notifications/">My Notifications</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-account-notifications-default" class="ab-submenu">
+					<li id="wp-admin-bar-my-account-notifications-unread"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/notifications/">Unread</a>		</li>
+					<li id="wp-admin-bar-my-account-notifications-read"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/notifications/read/">Read</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-my-account-messages" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/messages/">My Messages <span class="count">7</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-account-messages-default" class="ab-submenu">
+					<li id="wp-admin-bar-my-account-messages-inbox"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/messages/inbox/">Inbox <span class="count">7</span></a>		</li>
+					<li id="wp-admin-bar-my-account-messages-sentbox"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/messages/sentbox/">Sent</a>		</li>
+					<li id="wp-admin-bar-my-account-messages-compose"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/messages/compose/">Compose</a>		</li>
+					<li id="wp-admin-bar-my-account-messages-notices"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/messages/notices/">All Member Notices</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-my-account-friends" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/friends/">My Friends</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-account-friends-default" class="ab-submenu">
+					<li id="wp-admin-bar-my-account-friends-friendships"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/friends/">Friendships</a>		</li>
+					<li id="wp-admin-bar-my-account-friends-requests"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/friends/requests/">No Pending Requests</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-my-account-groups" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/groups/">My Groups</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-account-groups-default" class="ab-submenu">
+					<li id="wp-admin-bar-my-account-groups-memberships"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/groups/">Memberships</a>		</li>
+					<li id="wp-admin-bar-my-account-groups-invites"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/groups/invites/">No Pending Invites</a>		</li>
+					<li id="wp-admin-bar-my-account-groups-create"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/create/">Create a Group</a>		</li>
+					<li id="wp-admin-bar-group-skunkworks"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/skunkworks/">Academic Technology Research and Development Group</a>		</li>
+					<li id="wp-admin-bar-group-adjuncts"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/adjuncts/">Adjuncts!</a>		</li>
+					<li id="wp-admin-bar-group-announcements"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/announcements/">Announcements</a>		</li>
+					<li id="wp-admin-bar-group-another-chris-hidden"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/another-chris-hidden/">Another Chris hidden</a>		</li>
+					<li id="wp-admin-bar-group-bmcc-assessment-committee"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/bmcc-assessment-committee/">BMCC Assessment Committee</a>		</li>
+					<li id="wp-admin-bar-group-bmcc-mea-faculty-staff"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/bmcc-mea-faculty-staff/">BMCC MEA Faculty &amp; Staff</a>		</li>
+					<li id="wp-admin-bar-group-bmcc-prr-tech"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/bmcc-prr-tech/">BMCC Middle States Periodic Review Report Technology Committee</a>		</li>
+					<li id="wp-admin-bar-group-bmcc-mmp-100"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/bmcc-mmp-100/">BMCC MMP 100</a>		</li>
+					<li id="wp-admin-bar-group-cat-rd-subgroup"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cat-rd-subgroup/">CAT R&amp;D Subcommittee </a>		</li>
+					<li id="wp-admin-bar-group-cat-rd-coursesites-project"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cat-rd-coursesites-project/">CAT-R&amp;D CourseSites Project</a>		</li>
+					<li id="wp-admin-bar-group-cbox-theme-discussion-cac-only"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cbox-theme-discussion-cac-only/">CBox theme discussion – CAC only</a>		</li>
+					<li id="wp-admin-bar-group-cbox-theme-workspace"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cbox-theme-workspace/">CBox Theme workspace</a>		</li>
+					<li id="wp-admin-bar-group-chriss-test-group"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/chriss-test-group/">chris’s test group</a>		</li>
+					<li id="wp-admin-bar-group-commons-in-a-box-documentation-and-testing"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/commons-in-a-box-documentation-and-testing/">Commons In A Box documentation and testing</a>		</li>
+					<li id="wp-admin-bar-group-cuny-academic-commons-coding-team"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-academic-commons-coding-team/">CUNY Academic Commons Coding Team</a>		</li>
+					<li id="wp-admin-bar-group-cuny-academic-commons-subcommittee"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-academic-commons-subcommittee/">CUNY Academic Commons Subcommittee</a>		</li>
+					<li id="wp-admin-bar-group-cac-community-team-project-planning"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/">CUNY Academic Commons Team</a>		</li>
+					<li id="wp-admin-bar-group-cuny-committee-on-academic-technology-62702785"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-committee-on-academic-technology-62702785/">CUNY Committee on Academic Technology</a>		</li>
+					<li id="wp-admin-bar-group-eportfolio-and-high-impact-practices-conference"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/eportfolio-and-high-impact-practices-conference/">CUNY Eportfolio Symposium</a>		</li>
+					<li id="wp-admin-bar-group-games-teaching-and-learning"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/games-teaching-and-learning/">CUNY Games Network</a>		</li>
+					<li id="wp-admin-bar-group-cuny-gc-itp-program"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-gc-itp-program/">CUNY GC ITP Program</a>		</li>
+					<li id="wp-admin-bar-group-cuny-instructional-design"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-instructional-design/">CUNY Instructional Design</a>		</li>
+					<li id="wp-admin-bar-group-cuny-itp-core-1-fall-2010"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-itp-core-1-fall-2010/">CUNY ITP Core 1 Fall 2010</a>		</li>
+					<li id="wp-admin-bar-group-cuny-itunesu-management-council-team"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-itunesu-management-council-team/">CUNY ITUNESU Management Council Team</a>		</li>
+					<li id="wp-admin-bar-group-cuny-pie"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-pie/">CUNY Pie</a>		</li>
+					<li id="wp-admin-bar-group-cuny-technology-group"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/cuny-technology-group/">CUNY Technology Group</a>		</li>
+					<li id="wp-admin-bar-group-digital-humanities-initiative"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/digital-humanities-initiative/">Digital Humanities Initiative</a>		</li>
+					<li id="wp-admin-bar-group-email-notification-test-group"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/email-notification-test-group/">Email Notification Test Group</a>		</li>
+					<li id="wp-admin-bar-group-eportfolios"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/eportfolios/">ePortfolios </a>		</li>
+					<li id="wp-admin-bar-group-group-admins"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/group-admins/">Group Admins</a>		</li>
+					<li id="wp-admin-bar-group-hidden-chris"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/hidden-chris/">hidden chris</a>		</li>
+					<li id="wp-admin-bar-group-hidden-foo"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/hidden-foo/">hidden foo</a>		</li>
+					<li id="wp-admin-bar-group-school-of-public-affairs-higher-education-executive-certificate-program-in-educational-research"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/school-of-public-affairs-higher-education-executive-certificate-program-in-educational-research/">Higher Education Certificate Program at Baruch</a>		</li>
+					<li id="wp-admin-bar-group-hybrid-initiative-editorial-board"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/hybrid-initiative-editorial-board/">Hybrid Initiative Editorial Board</a>		</li>
+					<li id="wp-admin-bar-group-hybrid-initiative-resource-builders-group"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/hybrid-initiative-resource-builders-group/">Hybrid Initiative Resource Builders Group</a>		</li>
+					<li id="wp-admin-bar-group-itcp-core-2-spring-2011"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/itcp-core-2-spring-2011/">ITCP Core 2 Spring 2011</a>		</li>
+					<li id="wp-admin-bar-group-lms-blackboard-and-alternatives"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/lms-blackboard-and-alternatives/">LMS (Blackboard and alternatives)</a>		</li>
+					<li id="wp-admin-bar-group-math-matters"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/math-matters/">Math Matters</a>		</li>
+					<li id="wp-admin-bar-group-mobile-technology-research-group"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/mobile-technology-research-group/">Mobile Technology Research Group</a>		</li>
+					<li id="wp-admin-bar-group-moocs-and-the-like"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/moocs-and-the-like/">MOOCs and the like</a>		</li>
+					<li id="wp-admin-bar-group-onlineblended-learning-considerations"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/onlineblended-learning-considerations/">Online/Blended Learning Considerations</a>		</li>
+					<li id="wp-admin-bar-group-open-education-at-cuny"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/open-education-at-cuny/">Open Education at CUNY</a>		</li>
+					<li id="wp-admin-bar-group-planning-cuny-tech-a-episode-academic-software-solutions"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/planning-cuny-tech-a-episode-academic-software-solutions/">Planning CUNY Tech A+ episode: Academic Software Solutions</a>		</li>
+					<li id="wp-admin-bar-group-project-stretch"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/project-stretch/">Project Stretch </a>		</li>
+					<li id="wp-admin-bar-group-sloan-symposium-proposal"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/sloan-symposium-proposal/">Sloan symposium proposal</a>		</li>
+					<li id="wp-admin-bar-group-software-licensing-committee"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/software-licensing-committee/">Software Licensing Committee </a>		</li>
+					<li id="wp-admin-bar-group-spring-2013-itp-core-ii-course"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/spring-2013-itp-core-ii-course/">Spring 2013 ITP Core II Course</a>		</li>
+					<li id="wp-admin-bar-group-test-group-for-bp-docs-spacing"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/test-group-for-bp-docs-spacing/">Test Group for BP Docs Spacing</a>		</li>
+					<li id="wp-admin-bar-group-the-group-for-group-admins"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/the-group-for-group-admins/">The Group for Group Admins</a>		</li>
+					<li id="wp-admin-bar-group-videoconferencing"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/videoconferencing/">Videoconferencing</a>		</li>
+					<li id="wp-admin-bar-group-wordpress-help"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/wordpress-help/">Wordpress HELP!!</a>		</li>
+					<li id="wp-admin-bar-create-a-group"><a class="ab-item" href="http://commons.gc.cuny.edu/groups/create/">Create a Group</a>		</li></ul></div>		</li>
+					<li id="wp-admin-bar-my-account-settings" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://commons.gc.cuny.edu/members/cstein/settings/">My Settings</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-account-settings-default" class="ab-submenu">
+					<li id="wp-admin-bar-my-account-settings-general"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/settings/general/">General</a>		</li>
+					<li id="wp-admin-bar-my-account-settings-notifications"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/settings/notifications/">Email</a>		</li>
+					<li id="wp-admin-bar-my-account-settings-profile"><a class="ab-item" href="http://commons.gc.cuny.edu/members/cstein/settings/profile/">Profile</a>		</li></ul></div>		</li></ul>
+			      </li>
+			    </ul>
+
+		  </section>
+	</nav>
+
+	</div>
+	<!-- end navigation -->
+
+	<div class="header">
+		<div class="row">
+
+			<div class="small-12 medium-6 columns">
+				<img src="http://placehold.it/500x70&text=CUNY+Academic+Commons" alt="">
+			</div>
+			<div class="small-12 medium-4 columns">
+				<div class="row collapse">
+					<div class="small-8 columns"><input type="text" placeholder="Search Commons"></div>
+					<div class="small-4 columns"><a href="#" class="button tiny	">Search</a></div>
+				</div>
+
+
+			</div>
+
+
+			<div class="small-12 columns">
+			<!-- cuny main nav -->
+			<div class="contain-to-grid">
+			  <nav class="top-bar" data-topbar>
+			    <ul class="title-area">
+				    <li class="name">
+				      <!-- <h1><a href="#">My Site</a></h1> -->
+				    </li>
+				     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				</ul>
+
+				  <section class="top-bar-section">
+
+				    <!-- Nav Section -->
+				    <ul class="left">
+				      <li class="active"><a href="#">Home</a></li>
+				      <li><a href="#">People</a></li>
+				      <li><a href="#">Groups</a></li>
+				      <li><a href="#">Blogs</a></li>
+				      <li><a href="#">Wiki</a></li>
+				      <li><a href="#">News</a></li>
+				      <li><a href="#">Help</a></li>
+				      <li><a href="#">About</a></li>
+				    </ul>
+				  </section>
+			  </nav>
+			</div>
+			</div>
+
+		</div> <!-- end row  -->
+	</div><!-- end header -->
+
+	<!-- Begin Page Specific Markup -->
+	<div class="row ">
+
+		<!-- begin main content area -->
+		<div class="small-12 medium-8 columns">
+
+			<div class="my-overview">
+				<div class="row">
+					<div class="small-12 columns">
+						<h2>Christopher Stein</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-6 medium-3 columns">
+						<div class="overview-item">
+							<div class="overview-item-number">32</div>
+							<div class="overview-item-name">
+								<a href="#">Groups</a>
+							</div>
+						</div>
+					</div>
+					<div class="small-6 medium-3 columns">
+						<div class="overview-item">
+							<div class="overview-item-number">75</div>
+							<div class="overview-item-name">
+								<a href="#">Friends</a>
+							</div>
+						</div>
+					</div>
+					<div class="small-6 medium-3 columns">
+						<div class="overview-item">
+							<div class="overview-item-number">5</div>
+							<div class="overview-item-name">
+								<a href="#">Sites</a>
+							</div>
+						</div>
+					</div>
+					<div class="small-6 medium-3 columns">
+						<div class="overview-item">
+							<div class="progress-radial progress-50">
+							  <div class="overlay">50%</div>
+							</div>
+							<div class="overview-item-name">
+								<a href="#">Profile Progress</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="commons-content">
+
+
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<header id="my-activity">
+							<h2 >My Activity</h2>
+						</header>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div class="row">
+						    <div class="large-12 columns">
+								<form action="" id="activity-filter">
+							      <label>Filter My Activity By
+							        <select>
+							          <option value="all">All (unfiltered)</option>
+							          <option value="groups">Groups</option>
+							          <option value="blogs">Blogs</option>
+							          <option value="friends">Friends</option>
+							          <option value="personal">Personal</option>
+							        </select>
+							      </label>
+							    </form>
+						    </div>
+						</div> <!-- end row -->
+					</div> <!-- end column -->
+
+					<div class="small-12 columns">
+						<div id="relatedGroups" class="relatedContent">
+							<h3>Groups Similar to Yours <span class="more-info">?</span> </h3>
+
+							<dl class="accordion" data-accordion>
+								<dd>
+								    <a href="#panel1">Digital Humanities Initiative</a>
+								    <div id="panel1" class="content">
+									     <div class="item-avatar">
+											<a href="http://commons.gc.cuny.edu/groups/digital-humanities-initiative/"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/253/a1df2f3d2b0ef8d170c8f31f806dfb86-bpthumb.jpg" class="avatar group-253-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Digital Humanities Initiative" title="Digital Humanities Initiative"></a>
+										</div>
+
+										<div class="item accordion">
+											<h3 class="item-title"><a href="http://commons.gc.cuny.edu/groups/digital-humanities-initiative/">Digital Humanities Initiative</a></h3>
+
+
+											<div class="action">
+
+												<div class="generic-button group-button public" id="groupbutton-253"><a href="http://commons.gc.cuny.edu/groups/digital-humanities-initiative/leave-group?_wpnonce=63ef030aac" title="Join Group" class="group-button join-group confirm">Join Group</a></div>
+												<div class="meta">
+													Public Group / 310 members
+												</div>
+
+											</div>
+
+											<div class="item-meta"><span class="activity">active 5 days, 22 hours ago</span></div>
+
+											<div class="item-desc"><p>The CUNY Digital Humanities Initiative (CUNY DHI), launched in Fall 2010, aims to build connections and community among those at CUNY who are applying digital technologies to scholarship and pedagogy in the […]</p>
+											</div>
+
+										</div>
+								    </div>
+								</dd>
+
+								<dd>
+								    <a href="#panel2">CUNY Games Network</a>
+								    <div id="panel2" class="content">
+
+										<div class="item-avatar">
+											<a href="http://commons.gc.cuny.edu/groups/games-teaching-and-learning/"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/20/9da70ff0ed870bcebcc0a5e0092ede10-bpthumb.jpg" class="avatar group-20-avatar avatar-50 photo" width="50" height="50" alt="Group logo of CUNY Games Network" title="CUNY Games Network"></a>
+										</div>
+
+										<div class="item">
+											<h3 class="item-title"><a href="http://commons.gc.cuny.edu/groups/games-teaching-and-learning/">CUNY Games Network</a></h3>
+
+											<div class="action">
+
+												<div class="generic-button group-button public" id="groupbutton-253"><a href="http://commons.gc.cuny.edu/groups/digital-humanities-initiative/leave-group?_wpnonce=63ef030aac" title="Join Group" class="group-button join-group confirm">Join Group</a></div>
+												<div class="meta">
+
+													Public Group / 150 members
+												</div>
+
+											</div>
+
+											<div class="item-meta"><span class="activity">active 1 week, 6 days ago</span></div>
+
+											<div class="item-desc"><p>Visit our website at <a href="http://games.commons.gc.cuny.edu">http://games.commons.gc.cuny.edu</a> (or by clicking the Visit Blog link on the left).</p>
+												<p>We connect educators from every campus and discipline at CUNY who are interested in games, simulations, […]</p>
+											</div>
+
+
+
+										</div>
+
+										<div class="clear"></div>
+
+								    </div>
+								</dd>
+
+								<dd>
+								    <a href="#panel3">Open Education at CUNY</a>
+								    <div id="panel3" class="content">
+
+										<div class="item-avatar">
+											<a href="http://commons.gc.cuny.edu/groups/open-education-at-cuny/"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/39/2169624754_742036fd14-39-groupavatar-thumb.jpg" class="avatar group-39-avatar avatar-50 photo" width="50" height="50" alt="Group logo of Open Education at CUNY" title="Open Education at CUNY"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title"><a href="http://commons.gc.cuny.edu/groups/open-education-at-cuny/">Open Education at CUNY</a></div>
+
+											<div class="action">
+
+												<div class="generic-button group-button public" id="groupbutton-253"><a href="http://commons.gc.cuny.edu/groups/digital-humanities-initiative/leave-group?_wpnonce=63ef030aac" title="Join Group" class="group-button join-group confirm">Join Group</a></div>
+												<div class="meta">
+
+													Public Group / 134 members
+												</div>
+
+											</div>
+
+											<div class="item-meta"><span class="activity">active 2 months, 3 weeks ago</span></div>
+
+											<div class="item-desc"><p>A group devoted to making education open, accessible, and public through the use of open-source tools and non-proprietary software platforms.</p>
+											<p>Group avatar by <a href="http://www.flickr.com/photos/a_goyal/2169624754/">akashgoyal</a></p>
+											</div>
+
+
+										</div>
+
+										<div class="clear"></div>
+
+								    </div>
+								</dd>
+
+							</dl>
+						</div> <!-- end related groups -->
+
+						<div id="relatedBlogs" class="relatedContent">
+							<h3>Blogs Similar to Yours <span class="more-info">?</span> </h3>
+							<p class="small">formatting off, didn't have time to fix.</p>
+							<dl class="accordion" data-accordion>
+								<dd>
+								    <a href="#panel1">Lehman Faculty Professional Development</a>
+
+									<div id="panel1" class="content">
+										<div class="item-avatar">
+											<a href="http://lehmanfacultyprofessionaldevelopment.commons.gc.cuny.edu/"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/2921/b65231a56a650f9baf08d0052a217df1-bpthumb.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/2921/b65231a56a650f9baf08d0052a217df1-bpthumb.jpg" class="avatar user-2921-avatar avatar- photo" width="50" height="50" alt="Profile picture of site author Selin Kalostyan"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title"><a href="http://lehmanfacultyprofessionaldevelopment.commons.gc.cuny.edu/">Lehman Faculty Professional Development</a></div>
+											<div class="item-meta"><span class="activity">active 2 hours, 5 minutes ago</span></div>
+
+											<div class="blog-authors-list">Authors: <a href="http://commons.gc.cuny.edu/members/bamshadm/blogs/" title="Maryam Bamshad">Maryam Bamshad</a>, <a href="http://commons.gc.cuny.edu/members/ektsui/blogs/" title="Emma K. Tsui">Emma K. Tsui</a>, <a href="http://commons.gc.cuny.edu/members/robertfarrell/blogs/" title="Robert Farrell">Robert Farrell</a>, <a href="http://commons.gc.cuny.edu/members/amandagulla/blogs/" title="Amanda Nicole Gulla">Amanda Nicole Gulla</a>, <a href="http://commons.gc.cuny.edu/members/jmaybee/blogs/" title="Julie E. Maybee">Julie E. Maybee</a> <span class="blog-authors-list-more">and 33 more</span></div>			</div>
+
+										<div class="action">
+
+											<div class="generic-button blog-button visit"><a href="http://lehmanfacultyprofessionaldevelopment.commons.gc.cuny.edu/" title="Visit Site" class="blog-button visit">Visit Site</a></div>
+											<div class="meta">
+
+												Latest Post: <a href="http://lehmanfacultyprofessionaldevelopment.commons.gc.cuny.edu/?p=227">CUNY IT Conference is this Thursday and Friday</a>
+											</div>
+
+										</div>
+
+										<div class="clear"></div>
+									</div>
+								</dd>
+
+								<dd>
+								    <a href="#panel2">Helldriver's Pit Stop</a>
+								    <div id="panel2" class="content">
+
+
+										<div class="item-avatar">
+											<a href="http://helldriver.commons.gc.cuny.edu/"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/506/764dec50552ac97590b495fac662ee22-bpthumb.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/506/764dec50552ac97590b495fac662ee22-bpthumb.jpg" class="avatar user-506-avatar avatar- photo" width="50" height="50" alt="Profile picture of site author helldriver"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title"><a href="http://helldriver.commons.gc.cuny.edu/">Helldriver's Pit Stop</a></div>
+											<div class="item-meta"><span class="activity">active 2 days, 2 hours ago</span></div>
+
+											<div class="blog-authors-list">Authors: <a href="http://commons.gc.cuny.edu/members/helldriver/blogs/" title="helldriver">helldriver</a></div>			</div>
+
+										<div class="action">
+
+											<div class="generic-button blog-button visit"><a href="http://helldriver.commons.gc.cuny.edu/" title="Visit Site" class="blog-button visit">Visit Site</a></div>
+											<div class="meta">
+
+												Latest Post: <a href="http://helldriver.commons.gc.cuny.edu/?p=586">Of Plagues and Antibodies</a>
+											</div>
+
+										</div>
+
+										<div class="clear"></div>
+
+
+								    </div>
+								</dd>
+
+								<dd>
+								    <a href="#panel3">The Journal of Interactive Technology and Pedagogy</a>
+								    <div id="panel3" class="content">
+
+										<div class="item-avatar">
+											<a href="http://jitpstaging.commons.gc.cuny.edu/"><img src="http://gravatar.com/avatar/5b608287732b2a8851b08d46939c3c14?s=50&amp;r=G" data-src="http://gravatar.com/avatar/5b608287732b2a8851b08d46939c3c14?s=50&amp;r=G" class="avatar user-55-avatar avatar- photo" width="50" height="50" alt="Profile picture of site author Luke Waltzer"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title"><a href="http://jitpstaging.commons.gc.cuny.edu/">The Journal of Interactive Technology and Pedagogy</a></div>
+											<div class="item-meta"><span class="activity">active 2 days, 19 hours ago</span></div>
+
+											<div class="blog-authors-list">Authors: <a href="http://commons.gc.cuny.edu/members/jitpauthors/blogs/" title="JITP Authors">JITP Authors</a>, <a href="http://commons.gc.cuny.edu/members/alucchesi/blogs/" title="Andrew Lucchesi">Andrew Lucchesi</a>, <a href="http://commons.gc.cuny.edu/members/carlos/blogs/" title="Carlos Hernandez">Carlos Hernandez</a>, <a href="http://commons.gc.cuny.edu/members/rmcgarry/blogs/" title="Renee McGarry">Renee McGarry</a>, <a href="http://commons.gc.cuny.edu/members/lwaltzer/blogs/" title="Luke Waltzer">Luke Waltzer</a> <span class="blog-authors-list-more">and 3 more</span></div>			</div>
+
+										<div class="action">
+
+											<div class="generic-button blog-button visit"><a href="http://jitpstaging.commons.gc.cuny.edu/" title="Visit Site" class="blog-button visit">Visit Site</a></div>
+											<div class="meta">
+
+												Latest Post: <a href="http://jitpstaging.commons.gc.cuny.edu/?p=2332">Current Worlds</a>
+											</div>
+
+										</div>
+
+										<div class="clear"></div>
+
+
+								    </div>
+								</dd>
+
+							</dl>
+						</div> <!-- end related blogs -->
+
+						<div id="relatedFriends" class="relatedContent">
+							<h3>Friends of Friends <span class="more-info">?</span> </h3>
+							<p class="small">formatting off, didn't have time to fix.</p>
+							<dl class="accordion" data-accordion>
+								<dd>
+								    <a href="#panel1">Leila Walker</a>
+
+									<div id="panel1" class="content">
+
+										<div class="item-avatar">
+											<a href="http://commons.gc.cuny.edu/members/leilaswalker/"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/649/b8736afd223cb1a4f94a505de8a6fe22-bpthumb.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/649/b8736afd223cb1a4f94a505de8a6fe22-bpthumb.jpg" class="avatar user-649-avatar avatar- photo" width="50" height="50" alt="Profile picture of Leila Walker"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title">
+												<a href="http://commons.gc.cuny.edu/members/leilaswalker/">Leila Walker</a>
+
+
+											</div>
+
+											<div class="item-meta"><span class="activity">active 48 seconds ago</span></div>
+
+
+											<div class="more-member-data">
+																			<strong>College:</strong> CUNY Graduate Center<br>
+
+																	<strong>Title:</strong> Assistant Program Officer, Interactive Technology and Pedagogy Certificate Program<br>
+
+															<strong>Academic Interests:</strong> British Romanticism
+										Utopian Studies<br>
+
+
+											</div>
+
+
+														</div>
+
+										<div class="action">
+
+											<div class="generic-button friendship-button not_friends" id="friendship-button-649"><a href="http://commons.gc.cuny.edu/members/cstein/friends/add-friend/649/?_wpnonce=01ab39df11" title="Add Friend" id="friend-649" rel="add" class="friendship-button not_friends add">Add Friend</a></div>
+										</div>
+
+										<div class="clear"></div>
+
+
+									</div>
+								</dd>
+
+								<dd>
+								    <a href="#panel2">Kimon Keramidas</a>
+								    <div id="panel2" class="content">
+										<div class="item-avatar">
+											<a href="http://commons.gc.cuny.edu/members/kkeramidas/"><img src="http://gravatar.com/avatar/75dfdf2b2793a19137eab378196cb85e?s=50&amp;r=G" data-src="http://gravatar.com/avatar/75dfdf2b2793a19137eab378196cb85e?s=50&amp;r=G" class="avatar user-15-avatar avatar- photo" width="50" height="50" alt="Profile picture of Kimon Keramidas"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title">
+												<a href="http://commons.gc.cuny.edu/members/kkeramidas/">Kimon Keramidas</a>
+
+
+											</div>
+
+											<div class="item-meta"><span class="activity">active 14 minutes ago</span></div>
+
+
+											<div class="more-member-data">
+																			<strong>College:</strong> CUNY Graduate Center<br>
+
+																	<strong>Title:</strong> Assistant Director for Digital Media Lab at the Bard Graduate Center
+										Alumnus of Theatre PhD Program and […]<br>
+
+															<strong>Academic Interests:</strong> Interactive Technology and Pedagogy, Video Games Studies, Political Economy of Media, Interface Design, […]<br>
+
+
+											</div>
+
+
+														</div>
+
+										<div class="action">
+
+											<div class="generic-button friendship-button is_friend" id="friendship-button-15"><a href="http://commons.gc.cuny.edu/members/cstein/friends/remove-friend/15/?_wpnonce=dc18a492b1" title="Cancel Friendship" id="friend-15" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+										</div>
+
+										<div class="clear"></div>
+
+
+								    </div>
+								</dd>
+
+								<dd>
+								    <a href="#panel3">Amanda Licastro</a>
+								    <div id="panel3" class="content">
+										<div class="item-avatar">
+											<a href="http://commons.gc.cuny.edu/members/alicastro/"><img src="http://gravatar.com/avatar/8815cbf7231f220433ea6c8723106c87?s=50&amp;r=G" data-src="http://gravatar.com/avatar/8815cbf7231f220433ea6c8723106c87?s=50&amp;r=G" class="avatar user-1192-avatar avatar- photo" width="50" height="50" alt="Profile picture of Amanda Licastro"></a>
+										</div>
+
+										<div class="item">
+											<div class="item-title">
+												<a href="http://commons.gc.cuny.edu/members/alicastro/">Amanda Licastro</a>
+
+
+											</div>
+
+											<div class="item-meta"><span class="activity">active 16 minutes ago</span></div>
+
+
+										<div class="more-member-data">
+																		<strong>College:</strong> Borough of Manhattan Community College, Brooklyn College, CUNY Graduate Center, Macaulay Honors College<br>
+
+																<strong>Title:</strong> I am a PhD student in the English Program, and an Instructional Technology Fellow for the Macaulay Honors […]<br>
+
+														<strong>Academic Interests:</strong> My academic interests are tri-fold; textual studies, composition, and digital humanities. I study the […]<br>
+
+
+										</div>
+
+
+														</div>
+
+										<div class="action">
+
+											<div class="generic-button friendship-button is_friend" id="friendship-button-1192"><a href="http://commons.gc.cuny.edu/members/cstein/friends/remove-friend/1192/?_wpnonce=dc18a492b1" title="Cancel Friendship" id="friend-1192" rel="remove" class="friendship-button is_friend remove">Cancel Friendship</a></div>
+										</div>
+
+										<div class="clear"></div>
+
+
+								    </div>
+								</dd>
+
+							</dl>
+						</div> <!-- end related friends -->
+
+
+					</div> <!-- end column -->
+				</div> <!-- end row -->
+
+
+				<ul id="activity-stream" class="activity-list item-list">
+					<li class="blogs new_blog_post activity-item date-recorded-1402223561" id="activity-278451">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/apicciano/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/242/picciano14-2ecbea9d3193b09c6337d0cc1d089733f-avatar2.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/242/picciano14-2ecbea9d3193b09c6337d0cc1d089733f-avatar2.jpg" class="avatar user-242-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Anthony Picciano">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/apicciano/" title="Anthony Picciano">Anthony Picciano</a> wrote a new post, <a href="http://apicciano.commons.gc.cuny.edu/?p=9886">Oklahoma and South Carolina Rescind the Common Core!</a>, on the site <a href="http://apicciano.commons.gc.cuny.edu">Tony's Thoughts</a> <a href="http://apicciano.commons.gc.cuny.edu/?p=9886" class="view activity-time-since" title="View Discussion"><span class="time-since">17 hours, 39 minutes ago</span></a></p>
+							</div>
+
+						<div class="activity-inner">
+									<p>Dear Commons Community,</p>
+						<p>Two Republican governors, Mary Fallin of Oklahoma and Nikki Haley of South Carolina, have just signed laws pulling their states out of the Common Core State Standards initiative amid […]</p>
+								</div>
+
+
+						<div class="activity-meta">
+							<a href="http://apicciano.commons.gc.cuny.edu/?p=9886#respond" class="acomment-reply-nojs" id="acomment-comment-278451">Reply (<span>0</span>)</a>
+							<a href="http://commons.gc.cuny.edu/activity/favorite/278451/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+							<a href="http://commons.gc.cuny.edu/activity/delete/278451?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+						</div>
+						</div>
+						<div class="activity-comments">
+
+							<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278451" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278451" class="ac-input" name="ac_input_278451"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278451">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="blogs new_blog_comment activity-item date-recorded-1402192283" id="activity-278341">
+						<div class="activity-avatar">
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p> commented on the post, <a href="http://cunymathblog.commons.gc.cuny.edu/?p=88">Welcome to the CUNYMath Blog</a>, on the site <a href="http://cunymathblog.commons.gc.cuny.edu">CUNYMath Blog</a> <a href="http://cunymathblog.commons.gc.cuny.edu/2012/02/01/welcome-to-the-cunymath-blog/#comment-25975" class="view activity-time-since" title="View Discussion"><span class="time-since">1 day, 2 hours ago</span></a></p>
+							</div>
+
+							<div class="activity-inner">
+									<p>thank you</p>
+								</div>
+
+							<div class="activity-meta">
+								<a href="http://cunymathblog.commons.gc.cuny.edu/2012/02/01/welcome-to-the-cunymath-blog/#comment-25975" class="acomment-reply-nojs" id="acomment-comment-278341">Reply (<span>0</span>)</a>
+								<a href="http://commons.gc.cuny.edu/activity/favorite/278341/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+								<a href="http://commons.gc.cuny.edu/activity/delete/278341?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+							</div>
+							</div>
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278341" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278341" class="ac-input" name="ac_input_278341"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278341">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="groups personal bp_doc_edited activity-item mini" id="activity-276551">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/cstein/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar2.jpg" class="avatar user-18-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Christopher Stein">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/cstein/" title="Christopher Stein">Christopher Stein</a> edited <a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/docs/cac-comm-team-task-board">CAC Comm Team – Task Board</a> in <a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/" class=""><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/465/dec95236d12885fd1e91249813cd1f54-bpthumb.jpg" class="avatar group-465-avatar avatar-20 photo" width="20" height="20" alt="Group logo of CUNY Academic Commons Team"></a><a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/">CUNY Academic Commons Team</a> <a href="http://commons.gc.cuny.edu/activity/p/276551/" class="view activity-time-since" title="View Discussion"><span class="time-since">5 days, 21 hours ago</span></a></p>
+							</div>
+
+
+
+							<div class="activity-meta">
+												<a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/docs/cac-comm-team-task-board" class="acomment-reply-nojs" id="acomment-comment-276551">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/276551/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/276551?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-276551" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-276551" class="ac-input" name="ac_input_276551"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="276551">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="blogs new_blog_post activity-item date-recorded-1402181393" id="activity-278305">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/pthistlethwaite/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/2492/e5df35c7807c154287716d98bf59a50b-bpfull.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/2492/e5df35c7807c154287716d98bf59a50b-bpfull.jpg" class="avatar user-2492-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Polly Thistlethwaite">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/pthistlethwaite/" title="Polly Thistlethwaite">Polly Thistlethwaite</a> wrote a new post, <a href="http://gclibrary.commons.gc.cuny.edu/?p=2661">GC Library Website Down Sat-Sun June 7, 8</a>, on the site <a href="http://gclibrary.commons.gc.cuny.edu">Graduate Center Library Blog</a> <a href="http://gclibrary.commons.gc.cuny.edu/?p=2661" class="view activity-time-since" title="View Discussion"><span class="time-since">1 day, 5 hours ago</span></a></p>
+							</div>
+
+						<div class="activity-inner">
+							<p>With the upgrade in the GC building’s electrical power Friday night,&nbsp;the GC library servers are unstable and will likely continue to be&nbsp;over the weekend.</p>
+						<p>Use&nbsp;<a href="http://gclibraryisdown.org" rel="nofollow">http://gclibraryisdown.org</a>&nbsp;to reach a limited set of resources if the regular&nbsp;is not responsive. Apologies for the interruption in service.</p>
+						<p>The GC Library is closed Saturday June 7…<span class="activity-read-more" id="activity-read-more-278305"><a href="http://gclibrary.commons.gc.cuny.edu/?p=2661" rel="nofollow">[Read more]</a></span></p>
+								</div>
+
+
+						<div class="activity-meta">
+							<a href="http://gclibrary.commons.gc.cuny.edu/?p=2661#respond" class="acomment-reply-nojs" id="acomment-comment-278305">Reply (<span>0</span>)</a>
+							<a href="http://commons.gc.cuny.edu/activity/favorite/278305/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+							<a href="http://commons.gc.cuny.edu/activity/delete/278305?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+						</div>
+						</div>
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278305" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278305" class="ac-input" name="ac_input_278305"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278305">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+
+					</li>
+
+					<li class="groups personal new_forum_post activity-item" id="activity-265661">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/cstein/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar2.jpg" class="avatar user-18-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Christopher Stein">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/cstein/" title="Christopher Stein">Christopher Stein</a> replied to the forum topic <a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/forum/topic/personal-dashboard-initial-ideas/">Personal Dashboard Initial Ideas</a> in the group <a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/" class=""><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/465/dec95236d12885fd1e91249813cd1f54-bpthumb.jpg" class="avatar group-465-avatar avatar-20 photo" width="20" height="20" alt="Group logo of CUNY Academic Commons Team"></a><a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/">CUNY Academic Commons Team</a> <a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/forum/topic/personal-dashboard-initial-ideas/?topic_page=1#post-18382" class="view activity-time-since" title="View Discussion"><span class="time-since">3 weeks, 2 days ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p>I just wanted to update this forum because we looked at it in the meeting today as the latest thoughts on the dashboard, but it was not really the latest version of the wireframes I developed. This redmine issue:  […]</p>
+								</div>
+
+
+							<div class="activity-meta">
+												<a href="http://commons.gc.cuny.edu/groups/cac-community-team-project-planning/forum/topic/personal-dashboard-initial-ideas/?topic_page=1&amp;num=15#leave-a-reply" class="acomment-reply-nojs" id="acomment-comment-265661">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/265661/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/265661?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-265661" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-265661" class="ac-input" name="ac_input_265661"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="265661">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/">			</form>
+										</div>
+
+					</li>
+
+
+					<li class="blogs new_blog_post activity-item date-recorded-1402156998" id="activity-278196">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/helldriver/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/506/764dec50552ac97590b495fac662ee22-bpfull.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/506/764dec50552ac97590b495fac662ee22-bpfull.jpg" class="avatar user-506-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of helldriver">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/helldriver/" title="helldriver">helldriver</a> wrote a new post, <a href="http://helldriver.commons.gc.cuny.edu/?p=586">Of Plagues and Antibodies</a>, on the site <a href="http://helldriver.commons.gc.cuny.edu">Helldriver's Pit Stop</a> <a href="http://helldriver.commons.gc.cuny.edu/?p=586" class="view activity-time-since" title="View Discussion"><span class="time-since">1 day, 12 hours ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p><a href="http://helldriver.commons.gc.cuny.edu/files/2014/06/titanic.jpg" rel="nofollow"><img class="alignleft size-thumbnail wp-image-585" src="http://helldriver.commons.gc.cuny.edu/files/2014/06/titanic-150x150.jpg" alt="titanic" width="150" height="150"></a>If someone were to ask me, “Helldriver, what is the most maudlin sound in the world?” the Conan sitting Indian-style in my brain would answer, in the thick Austro-Bavarian accent of a future governor of California, “The most maudlin sound in the world is that of a Chinese immigrant playing ‘My Heart Will Go On (Love Theme from <em>Titanic</em>)’ on an…<span class="activity-read-more" id="activity-read-more-278196"><a href="http://helldriver.commons.gc.cuny.edu/?p=586" rel="nofollow">[Read more]</a></span></p>
+								</div>
+
+
+							<div class="activity-meta">
+												<a href="http://helldriver.commons.gc.cuny.edu/?p=586#respond" class="acomment-reply-nojs" id="acomment-comment-278196">Reply (<span>0</span>)</a>
+						<a href="http://commons.gc.cuny.edu/activity/favorite/278196/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+						<a href="http://commons.gc.cuny.edu/activity/delete/278196?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+						<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278196" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278196" class="ac-input" name="ac_input_278196"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278196">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+
+
+					<li class="groups exb activity-item date-recorded-1402155481" id="activity-278197">
+						<div class="activity-avatar">
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p>Blog: <a class="feed-link" href="http://feedproxy.google.com/~r/aaaricuny/~3/IY0PtncEVbQ/686092601440703"></a> from <a class="feed-author" href="http://www.facebook.com/">Asian American / Asian Research Institute – City University of New York's Facebook Wall</a> in the group <a href="http://commons.gc.cuny.edu/groups/aaari-friday-evening-lecture-series/" class=""><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/816/ca740be94ca1a67a420b1ad6c63c2fad-bpthumb.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/816/ca740be94ca1a67a420b1ad6c63c2fad-bpthumb.jpg" class="avatar group-816-avatar avatar-20 photo" width="20" height="20" alt="Group logo of Asian American / Asian Research Institute – CUNY"></a><a href="http://commons.gc.cuny.edu/groups/aaari-friday-evening-lecture-series/">Asian American / Asian Research Institute – CUNY</a> <a href="http://commons.gc.cuny.edu/activity/p/278197/" class="view activity-time-since" title="View Discussion"><span class="time-since">1 day, 12 hours ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p>Student Dennis Lee Receives Gilman International Scholarship – CUNY Newswire – CUNYwww1.cuny.eduBaruch College student Dennis Lee has won the Gilman International […]</p>
+								</div>
+
+
+							<div class="activity-meta">
+												<a href="?ac=278197/#ac-form-278197" class="acomment-reply" id="acomment-comment-278197">Reply (<span>0</span>)</a>
+							<a href="http://commons.gc.cuny.edu/activity/favorite/278197/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+							<a href="http://commons.gc.cuny.edu/activity/delete/278197?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278197" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278197" class="ac-input" name="ac_input_278197"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278197">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="blogs new_blog_post activity-item date-recorded-1402093785" id="activity-278133">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/stamang/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/677/57a326498766a103feed021b2a3cac2d-bpfull.png" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/677/57a326498766a103feed021b2a3cac2d-bpfull.png" class="avatar user-677-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Suzanne Tamang">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/stamang/" title="Suzanne Tamang">Suzanne Tamang</a> wrote a new post, <a href="http://jitpstaging.commons.gc.cuny.edu/?p=2330">Branding/Authority</a>, on the site <a href="http://jitpstaging.commons.gc.cuny.edu">The Journal of Interactive Technology and Pedagogy</a> <a href="http://jitpstaging.commons.gc.cuny.edu/?p=2330" class="view activity-time-since" title="View Discussion"><span class="time-since">2 days, 5 hours ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p><strong>EB:</strong>&nbsp; &nbsp; &nbsp;It’s weird that being a street artist is about branding yourself. That seems like it is opposite of what street art was once about, you know? But it’s about making people notice you.</p>
+						<p><strong>BH: &nbsp; &nbsp;&nbsp;</strong>And I think that definitely goes with Banksy and Basquiat – they had signatures. People have taken those signatures and bastardized them into…<span class="activity-read-more" id="activity-read-more-278133"><a href="http://jitpstaging.commons.gc.cuny.edu/?p=2330" rel="nofollow">[Read more]</a></span></p>
+								</div>
+
+
+							<div class="activity-meta">
+						<a href="http://jitpstaging.commons.gc.cuny.edu/?p=2330#respond" class="acomment-reply-nojs" id="acomment-comment-278133">Reply (<span>0</span>)</a>
+						<a href="http://commons.gc.cuny.edu/activity/favorite/278133/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/278133?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278133" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278133" class="ac-input" name="ac_input_278133"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278133">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+
+					<li class="groups joined_group activity-item mini date-recorded-1402090100" id="activity-278112">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/nicoledory/">
+									<img src="http://gravatar.com/avatar/540309e78c2ec834bbd2f75e40668e02?s=100&amp;r=G" data-src="http://gravatar.com/avatar/540309e78c2ec834bbd2f75e40668e02?s=100&amp;r=G" class="avatar user-5636-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Nicole Dory">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/nicoledory/" title="Nicole Dory">Nicole Dory</a> joined the group <a href="http://commons.gc.cuny.edu/groups/cuny-accessibility-projects/" class=""><img src="http://gravatar.com/avatar/d1addfe3f132789ef64a3a843b50895e?s=20&amp;r=G" data-src="http://gravatar.com/avatar/d1addfe3f132789ef64a3a843b50895e?s=20&amp;r=G" class="avatar group-884-avatar avatar-20 photo" width="20" height="20" alt="Group logo of CUNY Accessibility Projects"></a><a href="http://commons.gc.cuny.edu/groups/cuny-accessibility-projects/">CUNY Accessibility Projects</a> <a href="http://commons.gc.cuny.edu/activity/p/278112/" class="view activity-time-since" title="View Discussion"><span class="time-since">2 days, 6 hours ago</span></a></p>
+							</div>
+
+
+
+							<div class="activity-meta">
+												<a href="?ac=278112/#ac-form-278112" class="acomment-reply" id="acomment-comment-278112">Reply (<span>0</span>)</a>
+						<a href="http://commons.gc.cuny.edu/avity/favorite/278112/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/278112?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278112" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278112" class="ac-input" name="ac_input_278112"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278112">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="blogs friends new_blog_post activity-item" id="activity-277935">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/scottvoth/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/455/me129d7872f4142432362a27f96088b2cd4e-avatar2.jpg" class="avatar user-455-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Scott Voth">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/scottvoth/" title="Scott Voth">Scott Voth</a> wrote a new post, <a href="http://helpwanted.commons.gc.cuny.edu/?p=5327">Research internship – Wildlife Conservation Society (WCS)</a>, on the site <a href="http://helpwanted.commons.gc.cuny.edu">Help Wanted!</a> <a href="http://helpwanted.commons.gc.cuny.edu/?p=5327" class="view activity-time-since" title="View Discussion"><span class="time-since">3 days, 2 hours ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p><a href="http://helpwanted.commons.gc.cuny.edu/?p=5327" rel="nofollow"><img src="http://helpwanted.commons.gc.cuny.edu/files/2014/03/wwc-300x197.png" width="152" height="100" alt="Thumbnail" class="align-left thumbnail"></a><a href="http://helpwanted.commons.gc.cuny.edu/2014/03/18/archives-processing-intern-summer-2014-wildlife-conservation-society-archives-at-the-bronx-zoo/wwc/" rel="attachment wp-att-5220"></a>The Wildlife Conservation Society (WCS), located at the Bronx Zoo, is offering an internship (for course credit) or volunteer opportunity for a research project updating information on grant recipients.</p>
+						<p>“The […]</p>
+								</div>
+
+
+							<div class="activity-meta">
+												<a href="http://helpwanted.commons.gc.cuny.edu/?p=5327#respond" class="acomment-reply-nojs" id="acomment-comment-277935">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/277935/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/277935?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-277935" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-277935" class="ac-input" name="ac_input_277935"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="277935">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/friends/">			</form>
+										</div>
+
+					</li>
+
+
+					<li class="profile new_avatar activity-item mini date-recorded-1402089855" id="activity-278111">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/anna/">
+									<img src="http://gravatar.com/avatar/fd8f36a1c561cc977891f1d7c99bce59?s=100&amp;r=G" data-src="http://gravatar.com/avatar/fd8f36a1c561cc977891f1d7c99bce59?s=100&amp;r=G" class="avatar user-5585-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Anna Soo-Hoo">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/anna/" title="Anna Soo-Hoo">Anna Soo-Hoo</a> changed their profile picture <a href="http://commons.gc.cuny.edu/activity/p/278111/" class="view activity-time-since" title="View Discussion"><span class="time-since">2 days, 6 hours ago</span></a></p>
+							</div>
+
+
+
+							<div class="activity-meta">
+												<a href="?ac=278111/#ac-form-278111" class="acomment-reply" id="acomment-comment-278111">Reply (<span>0</span>)</a>
+						<a href="http://commons.gc.cuny.edu/activity/favorite/278111/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/278111?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278111" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278111" class="ac-input" name="ac_input_278111"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278111">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="blogs friends new_blog_comment activity-item" id="activity-277327">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/ck317/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/11/kendrick-photo-avatar2.jpg" class="avatar user-11-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Curtis Kendrick">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/ck317/" title="Curtis Kendrick">Curtis Kendrick</a> commented on the post, <a href="http://openaccess.commons.gc.cuny.edu/?p=1095">Come Work with Us! Scholarly Communications Librarian @ CUNY</a>, on the site <a href="http://openaccess.commons.gc.cuny.edu">Open Access @ CUNY</a> <a href="http://openaccess.commons.gc.cuny.edu/2014/06/03/come-work-with-us/#comment-2586" class="view activity-time-since" title="View Discussion"><span class="time-since">4 days, 19 hours ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p>Wow, what a great place to work!</p>
+								</div>
+
+
+							<div class="activity-meta">
+												<a href="http://openaccess.commons.gc.cuny.edu/2014/06/03/come-work-with-us/#comment-2586" class="acomment-reply-nojs" id="acomment-comment-277327">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/277327/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/277327?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-277327" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-277327" class="ac-input" name="ac_input_277327"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="277327">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/friends/">			</form>
+										</div>
+
+						</li>
+
+					<li class="friends friendship_created activity-item mini" id="activity-277240">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/ck317/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/11/kendrick-photo-avatar2.jpg" class="avatar user-11-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Curtis Kendrick">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/ck317/" title="Curtis Kendrick">Curtis Kendrick</a> and <a href="http://commons.gc.cuny.edu/members/lboyar/" class=""><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/5487/9444616cc30429906a47c3d40e907609-bpthumb.jpg" class="avatar user-5487-avatar avatar-20 photo" width="20" height="20" alt="Profile picture of Lee Boyar"></a><a href="http://commons.gc.cuny.edu/members/lboyar/" title="Lee Boyar">Lee Boyar</a> are now friends <a href="http://commons.gc.cuny.edu/activity/p/277240/" class="view activity-time-since" title="View Discussion"><span class="time-since">4 days, 22 hours ago</span></a></p>
+							</div>
+
+
+
+							<div class="activity-meta">
+												<a href="?ac=277240/#ac-form-277240" class="acomment-reply" id="acomment-comment-277240">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/277240/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/277240?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-277240" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-277240" class="ac-input" name="ac_input_277240"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="277240">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/friends/">			</form>
+										</div>
+
+					</li>
+
+					<li class="groups joined_group activity-item mini date-recorded-1402089365" id="activity-278104">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/nicoledory/">
+									<img src="http://gravatar.com/avatar/540309e78c2ec834bbd2f75e40668e02?s=100&amp;r=G" data-src="http://gravatar.com/avatar/540309e78c2ec834bbd2f75e40668e02?s=100&amp;r=G" class="avatar user-5636-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Nicole Dory">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/nicoledory/" title="Nicole Dory">Nicole Dory</a> joined the group <a href="http://commons.gc.cuny.edu/groups/cuny-technology-group/" class=""><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/1/robot-1-groupavatar-thumb.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/group-avatars/1/robot-1-groupavatar-thumb.jpg" class="avatar group-1-avatar avatar-20 photo" width="20" height="20" alt="Group logo of CUNY Technology Group"></a><a href="http://commons.gc.cuny.edu/groups/cuny-technology-group/">CUNY Technology Group</a> <a href="http://commons.gc.cuny.edu/activity/p/278104/" class="view activity-time-since" title="View Discussion"><span class="time-since">2 days, 6 hours ago</span></a></p>
+							</div>
+
+
+
+							<div class="activity-meta">
+												<a href="?ac=278104/#ac-form-278104" class="acomment-reply" id="acomment-comment-278104">Reply (<span>0</span>)</a>
+						<a href="http://commons.gc.cuny.edu/activity/favorite/278104/?_wpnonce=c9791287a7" class="fav" title="Mark as Favorite">sdfdsf</a>
+						<a href="http://commons.gc.cuny.edu/activity/delete/278104?_wpnonce=79cc8cc9ef" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-278104" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" data-src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-278104" class="ac-input" name="ac_input_278104"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="278104">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="4f167a8f44"><input type="hidden" name="_wp_http_referer" value="/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="friends personal friendship_created activity-item mini" id="activity-263426">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/cstein/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar2.jpg" class="avatar user-18-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Christopher Stein">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/cstein/" title="Christopher Stein">Christopher Stein</a> and <a href="http://commons.gc.cuny.edu/members/teststudent/" class=""><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/76/5f1d8fb7c2c01c71c484174918648ccd-bpthumb.jpg" class="avatar user-76-avatar avatar-20 photo" width="20" height="20" alt="Profile picture of Test Student"></a><a href="http://commons.gc.cuny.edu/members/teststudent/" title="Test Student">Test Student</a> are now friends <a href="http://commons.gc.cuny.edu/activity/p/263426/" class="view activity-time-since" title="View Discussion"><span class="time-since">2 months ago</span></a></p>
+							</div>
+
+
+
+							<div class="activity-meta">
+												<a href="?ac=263426/#ac-form-263426" class="acomment-reply" id="acomment-comment-263426">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/263426/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/263426?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-263426" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-263426" class="ac-input" name="ac_input_263426"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="263426">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/">			</form>
+										</div>
+
+					</li>
+
+					<li class="groups friends new_forum_post activity-item" id="activity-277288">
+						<div class="activity-avatar">
+										<a href="http://commons.gc.cuny.edu/members/admin/">
+									<img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/1/30d7d1d20298d2ad791395ac06a59d23-bpfull.jpg" class="avatar user-1-avatar avatar-100 photo" width="100" height="100" alt="Profile picture of Matthew K. Gold">			</a>
+								</div>
+
+						<div class="activity-content">
+
+							<div class="activity-header">
+								<p><a href="http://commons.gc.cuny.edu/members/admin/" title="Matthew K. Gold">Matthew K. Gold</a> replied to the forum topic <a href="http://commons.gc.cuny.edu/groups/wordpress-help/forum/topic/front-pages-slides-stopped-loading/">Front Pages Slides Stopped Loading?!</a> in the group <a href="http://commons.gc.cuny.edu/groups/wordpress-help/" class=""><img src="http://gravatar.com/avatar/7980277f8919c609f15e5d6eb25914ec?s=20&amp;r=G" class="avatar group-50-avatar avatar-20 photo" width="20" height="20" alt="Group logo of Wordpress HELP!!"></a><a href="http://commons.gc.cuny.edu/groups/wordpress-help/">Wordpress HELP!!</a> via email: <a href="http://commons.gc.cuny.edu/groups/wordpress-help/forum/topic/front-pages-slides-stopped-loading/?topic_page=1#post-18526" class="view activity-time-since" title="View Discussion"><span class="time-since">4 days, 19 hours ago</span></a></p>
+							</div>
+
+										<div class="activity-inner">
+									<p>Hi Timothy,</p>
+						<p>We discovered an error with our first fix — sorry about that. It looks to<br>
+					me like everything is working now on your site. If you have any other<br>
+					issues, please let us know.</p>
+								</div>
+
+
+							<div class="activity-meta">
+												<a href="http://commons.gc.cuny.edu/groups/wordpress-help/forum/topic/front-pages-slides-stopped-loading/?topic_page=1&amp;num=15#leave-a-reply" class="acomment-reply-nojs" id="acomment-comment-277288">Reply (<span>0</span>)</a>
+
+																	<a href="http://commons.gc.cuny.edu/activity/favorite/277288/?_wpnonce=cd7cebaeae" class="fav" title="Mark as Favorite">Favorite</a>
+													<a href="http://commons.gc.cuny.edu/activity/delete/277288?_wpnonce=2519443cce" class="button item-button bp-secondary-action delete-activity confirm" rel="nofollow">Delete</a>
+										</div>
+						</div>
+
+
+
+								<div class="activity-comments">
+
+											<form action="http://commons.gc.cuny.edu/activity/reply/" method="post" id="ac-form-277288" class="ac-form" style="display: none;">
+									<div class="ac-reply-avatar"><img src="http://commons.gc.cuny.edu/wp-content/blogs.dir/1/files/avatars/18/headshot_150_2-avatar1.jpg" class="avatar user-18-avatar avatar-25 photo" width="25" height="25" alt="Profile picture of Christopher Stein"></div>
+									<div class="ac-reply-content">
+										<div class="ac-textarea">
+											<textarea id="ac-input-277288" class="ac-input" name="ac_input_277288"></textarea>
+										</div>
+										<input type="submit" name="ac_form_submit" value="Post →"> &nbsp; or press esc to cancel.					<input type="hidden" name="comment_form_id" value="277288">
+									</div>
+									<input type="hidden" id="_wpnonce_new_activity_comment" name="_wpnonce_new_activity_comment" value="581cb1eb36"><input type="hidden" name="_wp_http_referer" value="/members/cstein/activity/friends/">			</form>
+										</div>
+
+						</li>
+				</ul>
+			</div>
+			<!-- end commons content -->
+		</div>
+		<!-- end main content area -->
+
+		<!-- begin side area -->
+		<div class="small-12 medium-4 columns">
+			<div class="side-content">
+				<!-- <h2>Christopher Stein</h2> -->
+
+				<nav>
+					<ul class="side-nav">
+						<li class="heading">My Info &amp; Settings</li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Notifications<span class="count">3</span></a></li>
+						<li><a href="#">Mentions</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Messages <span class="count">7</span></a></li>
+						<li><a href="#">Invites<span class="count">1</span></a></li>
+
+						<li class="divider"></li>
+
+
+					</ul>
+				</nav>
+				<h4>Commons Information</h4>
+				<div class="commons-info">
+					<p>Add slides here? featured group etc?</p>
+				</div>
+
+				<div class="divider"></div>
+
+				<h4>Who's Online?</h4>
+				<div class="whos-online">
+					<ul class="thumbs">
+					  <li><img src="http://placehold.it/100x100" alt=""></li>
+					  <li><img src="http://placehold.it/100x100" alt=""></li>
+					  <li><img src="http://placehold.it/100x100" alt=""></li>
+					  <li><img src="http://placehold.it/100x100" alt=""></li>
+					  <li><img src="http://placehold.it/100x100" alt=""></li>
+					  <li><img src="http://placehold.it/100x100" alt=""></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!-- end side area -->
+
+	</div>
+	<!-- End Page Specific Markup -->
+
+<div id="footerWrap">
+	<div class="row">
+		<div class="small-12 columns">
+
+			<div class="sitewide-footer">
+				<div class="fnote">
+					<p>This blog is part of the <a href="http://commons.gc.cuny.edu">CUNY Academic Commons</a>, an academic social network for the entire 24-campus <a href="http://cuny.edu">CUNY</a> system.</p>
+					<p>Unless otherwise stated, all content on the CUNY Academic Commons is licensed under a  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons</a> license.</p>
+				</div>
+
+				<div class="fleft">
+						<p><img id="cac-footer-logo" src="http://commons.gc.cuny.edu/wp-content/themes/bp-nelo/_inc/images/bg-header.gif"></p>
+						<p><a href="http://commons.gc.cuny.edu/help/">Help</a> | <a href="http://commons.gc.cuny.edu/about/contact-us/">Contact Us</a> | <a href="http://commons.gc.cuny.edu/about/privacy/">Privacy Policy</a> | <a href="http://commons.gc.cuny.edu/about/tos/">Terms of Service</a> | <a href="http://commons.gc.cuny.edu/about/images/">Image Credits</a></p>
+					</div>
+
+					<div class="fright">
+						<p id="footer-logo"><a href="http://www.cuny.edu" target="_blank"><img src="http://commons.gc.cuny.edu/wp-content/themes/bp-nelo/_inc/images/cuny_white.gif" alt="CUNY Logo" border="0"></a></p>
+						<p>
+							<span class="footer-link-line" id="generator-link">Built with <a href="http://WordPress.com/" title="WordPress" rel="generator">WordPress</a></span> |
+							<span class="footer-link-line" id="generator-link2">Protected by <a href="http://akismet.com/" title="Akismet" rel="generator">Akismet</a></span>  |
+							<span class="footer-link-line" id="designer-link">Powered by <strong><a href="http://www.cuny.edu" title="CUNY">CUNY</a></strong></span>
+						</p>
+					</div>
+			</div>
+
+			<style type="text/css">
+					/*<![CDATA[*/
+					#footerWrap{
+						background-color: #000;
+					}
+
+					.sitewide-footer, td#footer .sitewide-footer {
+					    text-align: left;
+					    width: 100%;
+					    background-color: #000;
+					    color: #aaa;
+					    display: block;
+					    padding: 7px 0 14px 0;
+					    font-size: 12px;
+					    line-height: 1.8em;
+					    float: left;
+					    font-family: Arial, sans-serif;
+					}
+
+					.sitewide-footer #cac-footer-logo {
+					  width: 397px;
+					}
+
+					.sitewide-footer a {
+					    color: #fff !important;
+					}
+
+					.sitewide-footer a:hover, td#footer .sitewide-footer a:hover {
+					    text-decoration: underline;
+					    background: #000;
+					    background-color: #000;
+					}
+
+					.sitewide-footer .fleft {
+					    padding-left: 20px;
+					    float: left;
+					    width: 430px;
+					}
+
+					.sitewide-footer .fright {
+					    float: right;
+					    width: 400px;
+					    padding-right: 20px;
+					    text-align: right;
+					}
+
+					 .sitewide-footer .fright p{
+					    clear: both;
+					}
+
+					.sitewide-footer img {
+					    background-color: #000;
+					}
+
+					.sitewide-footer .imglink {
+					    border: none;
+					    float: left;
+					}
+
+					.sitewide-footer #footer-logo{
+						overflow: hidden;
+					}
+					.sitewide-footer #footer-logo img{
+						float: right;
+					}
+
+					.sitewide-footer .fnote{
+					  border-bottom: 1px #fff solid;
+					  margin: 20px;
+					  clear: both;
+					}
+
+					.sitewide-footer p{
+					  margin-bottom: 1em;
+					}
+
+					.sitewide-footer span.footer-link-line {
+					  white-space: nowrap;
+					}
+
+					@media only screen and (max-width: 885px) {
+					  .sitewide-footer {
+					    /* play nicely with non-responsive themes (where parent has min-width) */
+					    max-width: 100%;
+					  }
+					  .sitewide-footer .fnote {
+					    max-width: 80%;
+					  }
+					  .sitewide-footer .fleft {
+					    float: none;
+					    width: auto;
+					  }
+					  .sitewide-footer .fright {
+					    float: none;
+					    text-align: left;
+					    padding-left: 20px;
+					    margin-top: 20px;
+					    width: auto;
+					    max-width: 400px;
+					  }
+					  .sitewide-footer .fright p {
+					    clear: none;
+					  }
+					  .sitewide-footer p#footer-logo {
+					    float: right;
+					  }
+					}
+
+					@media only screen and (max-width: 500px) {
+					  .sitewide-footer #cac-footer-logo {
+					    width: 90%;
+					    max-width: 397px; // just in case
+					  }
+					}
+					/*]]>*/
+			</style>
+		</div><!-- end small 12 -->
+
+	</div><!-- end row -->
+</div> <!-- footerWrap -->
+
+	<script src="js/foundation.min.js"></script>
+	<script src="js/foundation.topbar.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	(function($) {
+		$(document).foundation();
+	})(jQuery);
+	</script>
+</body>
+</html>

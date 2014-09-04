@@ -1,0 +1,46 @@
+//These are some styles Reverie added in that only
+//apply at certain breakpoints. This shows an way
+// to work with breakpoints without using the Foundation
+// classes in your HTML.
+
+// While this kind of Sass could be use to set the widths
+// of your grid elements, I recommend not mixing and
+// matching the two styles for the layout elements. that
+// could make it hard for someone else to come in and
+// figure out what CSS is responsible for setting the
+// width of a particular element.
+
+// Instead use this technique if you need to make some
+// kind of modification like font-size or padding etc
+// at a particular breakpoint.
+
+
+
+@media #{$small-up} {
+	.entry-author {
+		.avatar {
+			margin-bottom: rem-calc(20);
+		}
+	}
+}
+
+@media #{$medium-up} {
+	#content {
+		padding: $content-padding;
+	}
+	.entry-author {
+		margin: rem-calc(50) (-$content-padding);
+	}
+}
+
+@media #{$large-up} {
+	#sidebar {
+		padding-left: $column-gutter;
+		padding-right: 0;
+		margin-top: rem-calc(0);
+	}
+	.footer-widget {
+		margin-top: rem-calc(48);
+		padding-top: rem-calc(32);
+	}
+}

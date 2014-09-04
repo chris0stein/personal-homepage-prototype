@@ -1,0 +1,42 @@
+//This styles the original activity I copied and pasted from current commons site
+//mostly just copy/paste from what's there
+
+div.item-list-tabs ul {
+	list-style: none;
+}
+
+div.item-list-tabs ul li {
+float: left;
+margin: 5px 0 0 5px;
+}
+
+div.item-list-tabs ul li a {
+display: block;
+padding: 5px 10px;
+text-decoration: none;
+}
+
+div.item-list-tabs ul li.current a {
+
+	color: #555;
+	font-weight: bold;
+}
+li#activity-filter-select{
+	clear:both;
+	label{
+		float:left;
+	}
+	select{
+		float:left;
+	}
+}
+
+div.item-list-tabs ul li.last {
+float: right;
+margin: 7px 20px 0 0;
+}
+
+
+#whats-new-form{
+	clear:both;
+}

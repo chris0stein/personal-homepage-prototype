@@ -1,0 +1,203 @@
+/******************************************************************
+Site Name:
+Author:
+
+This was modified from the Bones Theme:
+
+Stylesheet: WordPress Post and Classes
+
+This is a variety of classes that WordPress adds to post and page content.
+
+There were so many here I didn't have time to comment everything out.
+If you aren't using this page directly then just don't @include it in your Sass.
+******************************************************************/
+
+
+
+
+//the hentry class is added to posts when you use
+//post_class() like:
+//<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+.hentry {
+
+	header {
+
+	}
+
+	footer {
+
+		p {
+
+		}
+	}
+
+} /* end .hentry */
+
+.single-title,
+.page-title,
+.entry-title {
+	// margin: 0;
+}
+
+.single-title {}
+
+.page-title {}
+
+.entry-title {}
+
+.archive-title {}
+
+/* want to style individual post classes? Booya! */
+.post-id {}         /* post by id (i.e. post-3) */
+.post {}            /* general post style */
+.page {}            /* general article on a page style */
+.attachment {}      /* general style on an attatchment */
+.sticky {}          /* sticky post style */
+.hentry {}          /* hentry class */
+.category-slug {}   /* style by category (i.e. category-videos) */
+.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+/* post meta */
+.byline {
+
+	time {}
+}
+
+/* entry content */
+.entry-content {
+	// padding: 1.5em 1.5em 0;
+
+	p {
+
+	}
+
+
+	ul, ol, table, dl {}
+
+	ul, ol {
+
+		li {}
+
+	}
+
+	ul {
+
+		li {}
+
+	}
+
+	ol {
+
+		li {}
+
+	}
+
+	table {
+
+		caption {}
+	}
+
+	tr {
+		// border-bottom: 1px solid $gray;
+
+		//if you want to style every other line differently
+		&:nth-child(even) {
+			// background-color: $light-gray;
+		}
+	}
+
+	td {
+
+		&:last-child {
+
+		}
+	}
+
+	th {
+
+		&:last-child {
+		}
+	}
+
+	blockquote {
+		&:before {}
+
+	}
+
+	dl {}
+
+	dt {}
+
+	dd {
+		// margin-left: 0;
+		// margin-bottom: 1.5em;
+	}
+
+	img {}
+
+	/*
+	image alignment on a screen this size may be
+	a bit difficult. It's set to start aligning
+	and floating images at the next breakpoint,
+	but it's up to you. Feel free to change it up.
+	*/
+	.alignleft, img.alignleft {}
+	.alignright, img.alignright {}
+	.aligncenter, img.aligncenter {}
+
+	//when users add images to a post or page they haev the option of settign different sizes, these classses are then applied
+	//All that is added here is a default max-width to help it be responsive and not break out of it's container.
+	.size-auto,
+	.size-full,
+	.size-large,
+	.size-medium,
+	.size-thumbnail {
+		max-width: 100%;
+		height: auto;
+	}
+
+	pre {
+	}
+
+} /* end .entry-content */
+
+.wp-caption {
+
+	/* images inside wp-caption */
+	img {
+	}
+
+	p.wp-caption-text {
+	}
+
+} /* end .wp-caption */
+
+/* image gallery styles */
+.gallery {
+
+	dl {
+
+		a {}
+
+		img {}
+
+	}
+
+	dt {}
+
+	dd {}
+
+} /* end .gallery */
+
+/* gallery caption styles */
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+// the tag output
+.tags {
+	margin: 0;
+}

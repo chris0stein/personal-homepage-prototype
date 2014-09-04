@@ -1,0 +1,153 @@
+@import "settings";
+@import "foundation";
+
+
+header {
+  @include grid-row;
+
+  .logo  { @include grid-column($columns:3, $center:true); }
+  padding-bottom: em-calc(10px);
+
+}
+
+
+.main-content {
+  @include grid-row;
+
+  aside  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:3);
+    // }
+  }
+
+  article  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:8, $offset: 1);
+    // }
+  }
+
+}
+
+
+.button, body.cacap input[type="button"], body.cacap input[type="submit"] {
+background: none repeat scroll 0 0 #2ba6cb;
+border: 1px solid #1E728C;
+box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+color: #FFFFFF;
+cursor: pointer;
+display: block;
+font-family: inherit;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+margin: 0;
+padding: 4px 10px;
+position: relative;
+text-align: center;
+text-decoration: none;
+text-transform: none;
+transition: background-color 0.15s ease-in-out 0s;
+width: auto;
+clear:both;
+max-width: 175px;
+}
+
+.side-nav {
+  li .cacap-avatar-buttons .button {
+    margin-bottom: 15px;
+    a{
+      color:#fff;
+      float:none;
+      clear:both;
+    }
+
+  }
+
+
+
+}
+
+.home-simplified{
+  .commons-content{
+    margin-top: 0;
+
+    #my-activity{
+      padding-bottom: 0;
+      p{
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+
+    //horizonatal nav with pill buttons for filters
+    .integrated-filter{
+      .side-nav{
+
+        li{
+          display: inline-block;
+          float:left;
+          line-height: 20px;
+          a{
+            padding:6px 12px;
+          }
+        }
+        li.heading{
+          padding:6px 6px 6px 0;
+        }
+
+        .selected{
+          background-color: #008cba;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          color:#fff;
+        }
+
+
+
+      }
+      //end side-nav
+    }
+
+  }
+  //end commons-content
+
+  .side-content{
+    padding-top: 0;
+
+    .side-nav{
+      .selected{
+        font-weight: 900;
+      }
+    }
+
+    #quick-links{
+        margin-top: 1em;
+      }
+
+    .integrated-filter{
+      .side-nav{
+      background-color: #008cba;
+      margin-right: -1.55rem;//-0.9375rem;
+      text-align: right;
+      padding-right: .5em;
+      li.heading{
+       color:#fff;
+      }
+      li a:not(.button){
+        color:#fff;
+      }
+
+
+
+    }
+    //end side-nav
+  }
+  //end integrated filter
+  }
+  //END SIDE CONTENT
+}

@@ -1,0 +1,18 @@
+/*
+Theme Name: BP-commons
+Theme URI: http://buddypress.org/extend/themes/
+Description: The theme for the CUNY Academic Commons
+Version: 1.2.3
+Author: Boone Gorges
+Author URI: http://teleogistic.net
+Tags: buddypress, three-columns, white, orange, flexible-width
+Template: bp-default
+License: Seriously, I have no idea
+License URI: http://yourmom.com
+*/
+
+/* Inherit the default theme styles */
+@import url( ../../plugins/buddypress/bp-themes/bp-default/_inc/css/default.css );
+
+/* Uncomment the following line and add your custom styles to '_inc/css/custom.css' */
+@import url( _inc/css/custom.css );

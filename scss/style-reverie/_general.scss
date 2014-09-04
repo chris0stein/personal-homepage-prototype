@@ -1,0 +1,119 @@
+// These are general styles that effect every page (or most of them)
+// add transition effect
+
+
+a, a:visited, a:hover, a:visited:hover {
+	@include transition(all 100ms linear);
+}
+
+
+body > header.contain-to-grid {
+	margin-bottom: rem-calc(32);
+	max-width: 100%;
+	padding-bottom: 0;
+}
+
+
+
+
+//This is an ID reverie has added to main content areas
+//you can keep, change or remove
+//see line 4 on single.php or archive.php in Reverie master for example
+#content {
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+
+
+
+//Reverie added in content.php as one of the post classes
+//it adds a line and spacing under the post
+//you can keep, change or remove
+.index-card {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: rem-calc(32);
+	margin-bottom: rem-calc(32);
+}
+
+.post header,
+.page header {
+	margin-bottom: rem-calc(20);
+}
+
+
+//Reverie added to style author name and time/date of post content
+span.author,
+time {
+	font-size: rem-calc(15);
+	color: #999;
+	a {
+		color: #999;
+		font-weight: bold;
+		&:hover, &:focus {
+			color: $body-font-color;
+		}
+	}
+}
+
+
+
+.entry-author {
+	background-color: #fbfbfb;
+	border: none;
+	padding: rem-calc(50) rem-calc(80);
+	margin: rem-calc(50) (-($column-gutter/2));
+	.avatar {
+		margin-right: rem-calc(40);
+		margin-bottom: rem-calc(24);
+	}
+	h4 {
+		a {
+			color: #999;
+			&:hover, &:focus {
+				color: $body-font-color;
+			}
+		}
+	}
+	p {
+		color: #bbb;
+	}
+}
+
+
+
+.entry-tags {
+	color: #999;
+	font-size: rem-calc(15);
+	a {
+		color: #999;
+		&:hover, &:focus {
+			color: $body-font-color;
+		}
+	}
+}
+
+
+
+.avatar {
+	@include border-radius(50%);
+	float: left;
+}
+
+// Fix admin bar issue, by bybe on Github
+.admin-bar > .fixed {
+	margin-top: rem-calc(32);
+}
+
+.f-topbar-fixed > .container {
+	margin-top: rem-calc(32);
+}
+
+
+
+
+
+
+
+
+

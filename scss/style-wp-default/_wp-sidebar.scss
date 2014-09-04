@@ -1,0 +1,113 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet:Widget Sidebar Classes
+
+Styles from Bones Theme and http://www.wpbeginner.com/wp-themes/default-wordpress-generated-css-cheat-sheet-for-beginners/
+
+These classes apply to the sidebar, but more generally to any widget area
+
+
+They are all commented out for now so as not to add to the weight of the page
+******************************************************************/
+
+.widgettitle {}
+
+.widget {
+
+	ul {
+
+		li {
+
+			&:first-child {}
+
+			&:last-child {}
+
+			a {}
+
+			/* deep nesting */
+			ul {}
+
+		}
+
+	}
+
+}
+
+#searchform {}
+.widget_search {}
+.screen-reader-text {}
+
+.widget_meta {}
+.widget_meta ul {}
+.widget_meta ul li {}
+.widget_meta ul li a {}
+
+.widget_links {}
+.widget_links ul {}
+.widget_links ul li {}
+.widget_links ul li a {}
+
+.widget_archive {}
+.widget_archive ul {}
+.widget_archive ul li {}
+.widget_archive ul li a {}
+.widget_archive select {}
+.widget_archive option {}
+
+.widget_pages {}
+.widget_pages ul {}
+.widget_pages ul li {}
+.widget_pages ul li a {}
+
+.widget_links {}
+.widget_links li:after {}
+.widget_links li:before {}
+.widget_tag_cloud {}
+.widget_tag_cloud a {}
+.widget_tag_cloud a:after {}
+.widget_tag_cloud a:before {}
+
+.widget_calendar {}
+#calendar_wrap {}
+#calendar_wrap th {}
+#calendar_wrap td {}
+#wp-calendar tr td {}
+#wp-calendar caption {}
+#wp-calendar a {}
+#wp-calendar #today {}
+#wp-calendar #prev {}
+#wp-calendar #next {}
+#wp-calendar #next a {}
+#wp-calendar #prev a {}
+
+.widget_categories {}
+.widget_categories ul {}
+.widget_categories ul li {}
+.widget_categories ul ul.children {}
+.widget_categories a {}
+.widget_categories select{}
+.widget_categories select#cat {}
+.widget_categories select.postform {}
+.widget_categories option {}
+.widget_categories .level-0 {}
+.widget_categories .level-1 {}
+.widget_categories .level-2 {}
+.widget_categories .level-3 {}
+
+.recentcomments {}
+#recentcomments {}
+#recentcomments li {}
+#recentcomments li a {}
+.widget_recent_comments {}
+
+.widget_recent_entries {}
+.widget_recent_entries ul {}
+.widget_recent_entries ul li {}
+.widget_recent_entries ul li a {}
+
+.textwidget {}
+.widget_text {}
+.textwidget p {}
+
