@@ -45,21 +45,21 @@
 			   </li>
 			   <li class="divider"></li>
 			   <li class="has-form">
-		        	<a href="index.html" class="small button ">Overview</a>
+		        <a href="index.html" class="small button ">Overview</a>
 		    	</li>
-		    	<li class="has-form">
-		        	<a href="home.html" class="small button alert">Top Filters</a>
-		    	</li>
-		    	<li class="has-form">
-		        	<a href="home-2.html" class="small button">Right Side Filters</a>
-		    	</li>
-		    	<li class="has-form">
-		        	<a href="home-3.html" class="small button">Left Side Filters</a>
-		    	</li>
+			   <li class="has-form">
+        <a href="home-2.html" class="small button">Left Link</a>
+    	</li>
+    	<li class="has-form">
+        <a href="home-3.html" class="small button">Right Link Simple</a>
+    	</li>
+    	<li class="has-form">
+        <a href="home.html" class="small button">Right Link Extras</a>
+    	</li>
 
 			</ul>
 
-		  </section>
+			</section>
 
 			<section class="top-bar-section">
 			    <!-- Right Nav Section -->
@@ -336,7 +336,6 @@
 
 			    <!-- Nav Section -->
 			    <ul class="left">
-			      <li class="active my-commons"><a href="#">My Commons</a></li>
 			      <li><a href="#">Home</a></li>
 			      <li><a href="#">People</a></li>
 			      <li><a href="#">Groups</a></li>
@@ -346,10 +345,10 @@
 			      <li><a href="#">Help</a></li>
 			      <li><a href="#">About</a></li>
 			    </ul>
-<!--
-			    <ul class="right">
 
-			    </ul> -->
+			    <ul class="right">
+			    	<li class="active my-commons"><a href="#">My Commons</a></li>
+			    </ul>
 			  </section>
 		  </nav>
 		</div>
@@ -358,48 +357,31 @@
 </div>
 	<!-- Begin Page Specific Markup -->
 	<div class="row content">
-		<div class="small-12 columns">
-			<div class="commons-content">
-
-						<nav class="integrated-filter">
-									<ul class="side-nav">
-										<li class="heading">SHOW: </li>
-										<li><a href="#" class="selected" id="everything">Everything</a></li>
-				  						<li><a href="#" id="groups">Groups</a></li>
-										<li><a href="#" id="sites">Sites</a></li>
-										<li><a href="#" id="friends">Friends</a></li>
-
-									</ul>
-								</nav>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="row content">
 
 		<!-- begin main content area -->
-		<div class="small-12 columns">
+		<div class="small-12 medium-8 columns">
+
+			<!-- <div class="quick-links">
+					<ul class="links">
+					  <li><a href="#"><button class="tiny expand">Profile</button></a></li>
+					  <li><a href="#"><button class="tiny expand">Messages</button></a></li>
+					  <li><a href="#"><button class="tiny expand">Sites</button></a></li>
+					  <li><a href="#"><button class="tiny expand">Groups</button></a></li>
+					  <li><a href="#"><button class="tiny expand">Invites</button></a></li>
+					  <li><a href="#"><button class="tiny expand">Friends</button></a></li>
+					</ul>
+			</div> --> <!-- end quick-links -->
+
 
 			<div class="commons-content">
 
 
 				<div class="row">
 				<div class="small-12 columns">
-						<!-- <header id="my-activity">
-
-							<p>showing what's happening realted to you</p>
-						</header> -->
-						<!-- <nav class="integrated-filter">
-					<ul class="side-nav">
-						<li class="heading">SHOW: </li>
-						<li><a href="#" class="selected" id="everything">Everything</a></li>
-  						<li><a href="#" id="groups">Groups</a></li>
-						<li><a href="#" id="sites">Sites</a></li>
-						<li><a href="#" id="friends">Friends</a></li>
-
-					</ul>
-				</nav> -->
+						<header id="my-activity">
+							<!-- <h2 >My Activity</h2> -->
+							<!-- <p>showing what's happening realted to you</p> -->
+						</header>
 
 					</div>
 					<!-- <div class="small-12 medium-5 columns">
@@ -1094,7 +1076,79 @@
 		<!-- end main content area -->
 
 		<!-- begin side area -->
-		<!-- side removed in this area -->
+		<div class="small-12 medium-4 columns">
+			<div class="side-content">
+				<!-- <h2>Christopher Stein</h2> -->
+
+
+
+				<nav>
+					<ul class="side-nav">
+						<li class="heading">SHOW: </li>
+						<li><a href="#" class="selected" id="everything">Everything</a></li>
+  						<li><a href="#" id="groups">Groups</a></li>
+						<li><a href="#" id="sites">Sites</li>
+						<li><a href="#" id="friends">Friends</a></li>
+
+					</ul>
+				</nav>
+
+
+				<div class="commons-card" id="commons-information">
+					<h4>Commons Information</h4>
+					<div class="commons-info">
+						<img src="http://placehold.it/300x100" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. </p>
+						<p class="viewmore"><a href="#">view more</a></p>
+					</div>
+				</div>
+				<!-- end commons card who's online -->
+
+				<!-- <div class="divider"></div> -->
+
+				<div class="commons-card" id="following">
+					<h4>You're Following</h4>
+					<ul class="following">
+						<li><a href="#">Helldriver's Pitstop</a></li>
+						<li><a href="#">CUNY Academic Commons Development Blog</a></li>
+						<li><a href="#">Digital Praxis Seminar Fall 2014 - Spring 2015</a></li>
+						<li><a href="#">CUNY Games Network</a></li>
+						<li><a href="#">CUNY Pie</a></li>
+					</ul>
+				</div>
+
+				<div class="commons-card" id="active-groups">
+					<h4>Your Active Groups</h4>
+					<ul class="following">
+						<li><a href="#">BMCC MEA Department</a></li>
+						<li><a href="#">CUNY Academic Commons Team</a></li>
+						<li><a href="#">CUNY Committee on Academic Technology</a></li>
+						<li><a href="#">CUNY Games Network</a></li>
+
+					</ul>
+				</div>
+
+				<div class="commons-card" id="whos-online">
+					<h4>Who's Online?</h4>
+					<div class="whos-online">
+						<ul class="thumbs">
+						  <li><img src="http://placehold.it/100x100" alt=""></li>
+						  <li><img src="http://placehold.it/100x100" alt=""></li>
+						  <li><img src="http://placehold.it/100x100" alt=""></li>
+						  <li><img src="http://placehold.it/100x100" alt=""></li>
+						  <li><img src="http://placehold.it/100x100" alt=""></li>
+						  <li><img src="http://placehold.it/100x100" alt=""></li>
+						</ul>
+
+					</div>
+				</div>
+				<!-- end commons card who's online -->
+
+			</div>
+		</div>
 		<!-- end side area -->
 
 	</div>

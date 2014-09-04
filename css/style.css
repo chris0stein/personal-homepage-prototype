@@ -4023,6 +4023,9 @@ p {
   width: 50px;
   height: 50px;
 }
+.commons-content .activity-item .activity-avatar {
+  position: relative;
+}
 @media only screen {
   .commons-content .activity-item .activity-avatar {
     padding-left: 0.9375rem;
@@ -4057,7 +4060,7 @@ p {
 .commons-content .activity-item .activity-avatar .secondary-actor {
   position: absolute;
   bottom: -20px;
-  right: -20px;
+  left: 50px;
 }
 .commons-content .activity-item .activity-avatar .secondary-actor img.avatar {
   width: 45px;

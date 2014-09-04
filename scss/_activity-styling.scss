@@ -300,6 +300,7 @@
 		}
 
 		.activity-avatar{
+			position:relative;
 			@media #{$small-up} {
 				@include grid-column(12);
 			}
@@ -325,7 +326,7 @@
 			.secondary-actor{
 				position: absolute;
 				bottom:-20px;
-				right:-20px;
+				left:50px;
 
 				img.avatar{
 					width:45px;
