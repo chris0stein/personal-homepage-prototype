@@ -5083,6 +5083,9 @@ div.item-list-tabs ul li.last {
     float: left;
   }
 }
+#activity-stream .activity-item .activity-header .activity-action .activity-time {
+  color: #888;
+}
 @media only screen {
   #activity-stream .activity-item .activity-header .activity-action .activity-time {
     padding-left: 0;
@@ -5095,6 +5098,13 @@ div.item-list-tabs ul li.last {
   font-size: .8rem;
   font-style: italic;
   text-align: right;
+  color: #888;
+}
+#activity-stream .activity-item .activity-header .activity-action .activity-description {
+  color: #888;
+}
+#activity-stream .activity-item .activity-header .activity-action .activity-description p {
+  color: #888;
 }
 @media only screen {
   #activity-stream .activity-item .activity-header .activity-action .activity-description {
@@ -5145,12 +5155,6 @@ div.item-list-tabs ul li.last {
 }
 #activity-stream .activity-item .activity-details .activity-inner {
   padding-top: .5em;
-  font-family: Merriweather, serif;
-  font-family: Vollkorn, serif;
-}
-#activity-stream .activity-item .activity-details .activity-inner p {
-  font-family: Merriweather, serif;
-  font-family: Vollkorn, serif;
 }
 @media only screen {
   #activity-stream .activity-item .activity-details .activity-inner {

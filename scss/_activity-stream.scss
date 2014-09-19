@@ -101,17 +101,22 @@
 					@media #{$small-up} {
 						@include grid-column($columns:4, $collapse:true);
 					}
+					color: #888;
 
 
 					p{
 						font-size: .8rem;
 						font-style: italic;
 						text-align: right;
+						color:#888;
 					}
 				}
 
 				.activity-description{
-
+					color: #888;
+					p{
+						color:#888;
+					}
 					// border-bottom: 1px solid #eee;
 					@media #{$small-up} {
 						@include grid-column($columns:12, $collapse:true);
@@ -145,11 +150,11 @@
 			.activity-inner{
 				// border-top: 1px solid #eee;
 				padding-top: .5em;
-				font-family: Merriweather, serif;
-				font-family: Vollkorn, serif;
+				// font-family: Merriweather, serif;
+				// font-family: Vollkorn, serif;
 				p{
-					font-family: Merriweather, serif;	
-					font-family: Vollkorn, serif;
+					// font-family: Merriweather, serif;	
+					// font-family: Vollkorn, serif;
 				}
 
 				@media #{$small-up} {
