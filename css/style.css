@@ -1,8 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic,700italic);
 /* Welcome and glad you are using Reverie.
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.
  * http://themefortress.com/reverie */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400);
 meta.foundation-version {
   font-family: "/5.2.1/";
 }
@@ -184,9 +186,9 @@ ul.pagination li {
 
 /* Start to customize Reverie */
 a, a:visited, a:hover, a:visited:hover {
-  -webkit-transition: all 100ms linear;
   -moz-transition: all 100ms linear;
   -o-transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
@@ -260,10 +262,8 @@ time a:focus {
 }
 
 .avatar {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   float: left;
 }
@@ -281,10 +281,8 @@ figure {
 }
 
 figure img {
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -390,10 +388,8 @@ figure.alignleft.figure {
 }
 
 .page-numbers li span.current {
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -559,15 +555,11 @@ body {
   overflow: hidden;
 }
 .intro .section {
-  -webkit-column-count: 2;
   -moz-column-count: 2;
-  -ms-column-count: 2;
-  -o-column-count: 2;
+  -webkit-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 1.875rem;
   -moz-column-gap: 1.875rem;
-  -ms-column-gap: 1.875rem;
-  -o-column-gap: 1.875rem;
+  -webkit-column-gap: 1.875rem;
   column-gap: 1.875rem;
 }
 
@@ -4233,7 +4225,7 @@ p {
   background: -o-linear-gradient(top, white 0%, #ededed 100%);
   background: -ms-linear-gradient(top, white 0%, #ededed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
-  background: linear-gradient(top, #ffffff 0%, #ededed 100%);
+  background: linear-gradient(top, white 0%, #ededed 100%);
   border: 1px solid #ccc;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -4954,6 +4946,230 @@ div.item-list-tabs ul li.last {
 
 #whats-new-form {
   clear: both;
+}
+
+#exampele-to-use-delete-later .custom-grid-class {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  width: 33.33333%;
+  float: right;
+  left: 25%;
+  right: auto;
+  right: 75%;
+  left: auto;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+  margin-left: 25% !important;
+}
+@media only screen and (min-width: 40.063em) {
+  #exampele-to-use-delete-later {
+    padding-left: 0;
+    padding-right: 0;
+    width: 16.66667%;
+    float: left;
+  }
+}
+#exampele-to-use-delete-later .custom-row-class {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 58.75rem;
+  *zoom: 1;
+}
+#exampele-to-use-delete-later .custom-row-class:before, #exampele-to-use-delete-later .custom-row-class:after {
+  content: " ";
+  display: table;
+}
+#exampele-to-use-delete-later .custom-row-class:after {
+  clear: both;
+}
+#exampele-to-use-delete-later .custom-row-class .custom-column-class {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+}
+#exampele-to-use-delete-later .your-class-name {
+  width: auto;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+  *zoom: 1;
+}
+#exampele-to-use-delete-later .your-class-name:before, #exampele-to-use-delete-later .your-class-name:after {
+  content: " ";
+  display: table;
+}
+#exampele-to-use-delete-later .your-class-name:after {
+  clear: both;
+}
+
+#activity-stream .activity-item {
+  margin-bottom: 2rem;
+  *zoom: 1;
+  padding-bottom: 2em;
+}
+#activity-stream .activity-item:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#activity-stream .activity-item .activity-header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 58.75rem;
+  *zoom: 1;
+}
+#activity-stream .activity-item .activity-header:before, #activity-stream .activity-item .activity-header:after {
+  content: " ";
+  display: table;
+}
+#activity-stream .activity-item .activity-header:after {
+  clear: both;
+}
+@media only screen {
+  #activity-stream .activity-item .activity-header .activity-avatar {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 16.66667%;
+    float: left;
+  }
+}
+#activity-stream .activity-item .activity-header .activity-avatar img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+#activity-stream .activity-item .activity-header .activity-avatar .main-actor img.avatar {
+  border-radius: 10px;
+  width: 75px;
+  height: 75px;
+  float: none;
+}
+#activity-stream .activity-item .activity-header .activity-avatar .main-actor .secondary-actor img.avatar {
+  width: 45px;
+  height: 45px;
+}
+@media only screen {
+  #activity-stream .activity-item .activity-header .activity-action {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+  }
+}
+#activity-stream .activity-item .activity-header .activity-action .actor-name {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+@media only screen {
+  #activity-stream .activity-item .activity-header .activity-action .actor-name {
+    padding-left: 0;
+    padding-right: 0;
+    width: 66.66667%;
+    float: left;
+  }
+}
+@media only screen {
+  #activity-stream .activity-item .activity-header .activity-action .activity-time {
+    padding-left: 0;
+    padding-right: 0;
+    width: 33.33333%;
+    float: left;
+  }
+}
+#activity-stream .activity-item .activity-header .activity-action .activity-time p {
+  font-size: .8rem;
+  font-style: italic;
+  text-align: right;
+}
+@media only screen {
+  #activity-stream .activity-item .activity-header .activity-action .activity-description {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    float: left;
+  }
+}
+#activity-stream .activity-item .activity-details {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 58.75rem;
+  *zoom: 1;
+}
+#activity-stream .activity-item .activity-details:before, #activity-stream .activity-item .activity-details:after {
+  content: " ";
+  display: table;
+}
+#activity-stream .activity-item .activity-details:after {
+  clear: both;
+}
+#activity-stream .activity-item .activity-details .featured-image {
+  height: 150px;
+  overflow: hidden;
+}
+@media only screen {
+  #activity-stream .activity-item .activity-details .featured-image {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  #activity-stream .activity-item .activity-details .featured-image {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    left: 16.66667%;
+    right: auto;
+    float: left;
+  }
+}
+#activity-stream .activity-item .activity-details .activity-inner {
+  padding-top: .5em;
+  font-family: Merriweather, serif;
+  font-family: Vollkorn, serif;
+}
+#activity-stream .activity-item .activity-details .activity-inner p {
+  font-family: Merriweather, serif;
+  font-family: Vollkorn, serif;
+}
+@media only screen {
+  #activity-stream .activity-item .activity-details .activity-inner {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  #activity-stream .activity-item .activity-details .activity-inner {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    left: 16.66667%;
+    right: auto;
+    float: left;
+  }
 }
 
 .first {
