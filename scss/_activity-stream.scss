@@ -78,7 +78,10 @@
 						}
 					}
 				}
+
+				
 			}
+			
 
 
 			.activity-action{
@@ -128,9 +131,15 @@
 			}
 		}
 		//end .activity-header ==============================
+		
+
+		.header-2{
+				background-color: #eee;
+		}
 
 		.activity-details{
 			@include grid-row();
+			margin-top: .5rem;
 
 			.featured-image{
 				height:150px;
@@ -173,3 +182,21 @@
 	}
 	//end .activity-item ===============================
 }
+//end #activity-stream
+
+#activity-stream.activity-list-2{
+	.activity-item{
+		border: 1px solid #aaa;
+		padding: 0;
+		.activity-header{
+			background-color: #dedede;
+			padding-top: 8px;
+			padding: 8px 0 1.5rem 0;
+		}
+	}
+	
+}
+
+
+
+

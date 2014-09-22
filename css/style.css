@@ -5114,6 +5114,9 @@ div.item-list-tabs ul li.last {
     float: left;
   }
 }
+#activity-stream .activity-item .header-2 {
+  background-color: #eee;
+}
 #activity-stream .activity-item .activity-details {
   width: 100%;
   margin-left: auto;
@@ -5122,6 +5125,7 @@ div.item-list-tabs ul li.last {
   margin-bottom: 0;
   max-width: 58.75rem;
   *zoom: 1;
+  margin-top: .5rem;
 }
 #activity-stream .activity-item .activity-details:before, #activity-stream .activity-item .activity-details:after {
   content: " ";
@@ -5174,6 +5178,16 @@ div.item-list-tabs ul li.last {
     right: auto;
     float: left;
   }
+}
+
+#activity-stream.activity-list-2 .activity-item {
+  border: 1px solid #aaa;
+  padding: 0;
+}
+#activity-stream.activity-list-2 .activity-item .activity-header {
+  background-color: #dedede;
+  padding-top: 8px;
+  padding: 8px 0 1.5rem 0;
 }
 
 .first {
