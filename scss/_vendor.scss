@@ -1,0 +1,64 @@
+
+// Load some Compass magic, note you will need to install Compass first
+@import "compass/css3/shared"; //removed because throwing errors in prepros
+// @import "compass/css3/deprecated-support"; //adding in place of shared to silence warnings
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/columns";
+@import "compass/utilities/general/clearfix";
+
+
+// import normalize, stay at top
+// @import "normalize";
+
+// Global Foundation Settings
+@import "vendor/settings";
+@import "vendor/foundation";
+// Tweak the mixin for WordPress, this might create some extra CSS in additional to app.css
+@import "vendor/foundation/components/pagination";
+
+// Reverie comes with a standalone Foundation stylesheet already
+// @import "foundation";
+
+/* Start to customize Reverie */
+// the next imports are default stylings Reverie has added to help fit Foundation into WordPress
+// For the most part you can modify these where you need to or even remove the styles.
+// You can also just leave them be until one conflicts with what you want to do
+
+//In this child theme the Reverie styling has been moved to separate files and grouped by the type of content they style (see below).
+
+// define content padding for later use
+//Reverie added, to standardize padding
+//you can change but do not remove unless you also remove all
+//references to $content-padding
+$content-padding: rem-calc(50);
+
+@import "vendor/style-reverie/general";
+
+@import "vendor/style-reverie/images";
+
+@import "vendor/style-reverie/pagination";
+
+@import "vendor/style-reverie/comment";
+
+@import "vendor/style-reverie/sidebar";
+
+@import "vendor/style-reverie/footer";
+
+@import "vendor/style-reverie/breakpoint-specific";
+
+
+// ==========================================
+// Default WordPress CSS classes.
+
+// By default WordPress adds a lot of classes to different UI elements.
+// These partials show them.
+//Uncomment the imports to use one or more of them, or copy from the files to your own styles below.
+
+// @import "vendor/style-wp-default/wp-body";
+// @import "vendor/style-wp-default/wp-comments";
+// @import "vendor/style-wp-default/wp-post-page";
+// @import "vendor/style-wp-default/wp-sidebar";
+
+
+

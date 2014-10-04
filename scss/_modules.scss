@@ -1,0 +1,10 @@
+// this imports page-specific layout and styling and  modules that require layout?
+
+//still not sure what the best differentiation is between modules and components
+
+@import "modules/sitewide";
+@import "modules/intro";
+@import "modules/header";
+@import "modules/main-content";
+@import "modules/side-nav";
+@import "modules/page-home-simplified";

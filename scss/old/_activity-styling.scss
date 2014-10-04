@@ -1,0 +1,642 @@
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+
+
+.quick-links .links {
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 6,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: 20px,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+
+  padding-top: 1em;
+
+  li{
+
+  }
+}//end quick-links
+
+.more-info{
+	background: #1fb3dd;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	display: inline;
+	font-size: .6em;
+	margin-left: 2px;
+	padding: 3px 5px;
+	height:80%;
+	position: relative;
+	top:-.5em;
+}
+//end more-info
+
+.my-overview{
+	h2{
+		font-size:1.5em;
+		font-weight: 400;
+		background-color: #666;
+		color: #eee;
+		padding: 4px;
+	}
+
+	.overview-item{
+
+		margin-bottom: 1em;
+
+		.overview-item-number{
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			background-color: $primary-color;
+			color:#efefef;
+			text-align: center;
+			// padding:16px 8px;
+			font-family: Lato, sans-serif;
+			font-size: 3em;
+			width: 100%;
+			height: 100px;
+			line-height: 100px;
+			vertical-align: middle;
+		}
+
+		.overview-item-name{
+			padding-top: .5em;
+			text-align: center;
+			clear: both;
+		}
+
+		.progress-bar {
+			// width:50%;
+			height:50px;
+			position:relative;
+
+			progress{
+				width:100%;
+				display: block;
+				position:absolute;
+				bottom:0;
+				left:0;
+			}
+		}
+	}
+
+	//progress circle is in separate partial
+}
+//end my overview
+
+//overview on separate pages where it is at the top.
+.top-overview{
+	overflow: hidden;
+	margin-top: 1.5em;
+	background-color: #aaa;
+	padding:.5em;
+
+	h2{
+		font-size:1.5em;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.avatar{
+		width:33%;
+		float: left;
+		img{
+			width:100%;
+		}
+	}
+
+	.personal-info{
+		width:60%;
+		float: right;
+	}
+
+	.quick-links{
+		margin-top: 2.2em;
+		.row{
+			margin-bottom: 1em;
+		}
+
+		.link{
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			background-color: $primary-color;
+			color:#efefef;
+			text-align: center;
+			// padding:16px 8px;
+			font-family: Lato, sans-serif;
+			// font-size: 3em;
+			width: 100%;
+			height: 35px;
+			line-height: 35px;
+			vertical-align: middle;
+
+			a{
+				color:#efefef;
+
+				.count{
+					background: #fff; //#1fb3dd;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 3px;
+					color: #1fb3dd; //#fff;
+					display: inline;
+					font-size: 90%;
+					margin-left: 2px;
+					padding: 1px 6px;
+				}
+			}
+		}
+	}
+
+	.overview-item{
+
+		margin-bottom: 1em;
+		overflow: hidden;
+		line-height: 1.3em;
+
+		.overview-item-number{
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			background-color: $primary-color;
+			color:#efefef;
+			text-align: center;
+			// padding:16px 8px;
+			font-family: Lato, sans-serif;
+			font-size: 3em;
+			width: 100%;
+			height: 100px;
+			line-height: 100px;
+			vertical-align: middle;
+		}
+
+		.overview-item-name{
+			// padding-top: .5em;
+			text-align: left;
+			float: left;
+			width: 60%;
+
+		}
+
+		.progress-bar {
+			// width:50%;
+			height:16px;
+			position:relative;
+			// padding-top: .5em;
+			width:35%;
+			float: left;
+			progress{
+				width:100%;
+				// display: block;
+				position:absolute;
+				bottom:0;
+				// left:0;
+			}
+		}
+	}
+}
+//end top-overview
+
+//Some different styling for my overview when side-content
+.side-content{
+	.my-overview{
+		.overview-item{
+
+			.overview-item-number{
+				height:50px;
+				line-height: 50px;
+				font-size:2em
+
+			}
+		}
+	}
+}
+//end side-content overview styling
+
+.commons-info {
+
+	background-color: #333;
+	padding: $column-gutter/2 0;
+	color:#fff;
+
+	.slides{
+		// border-right:1px solid #fff;
+	}
+	.commons-updates{
+		// background-color: #333;
+		// padding:.5em;
+		border-left:1px solid #fff;
+
+		.update{
+			font-weight: 400;
+			font-size: .9em;
+			background-color: #999;
+			padding:.5em;
+			margin-bottom: .5em;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+
+			h4{
+				margin: 0;
+				line-height: 1;
+				font-weight: 700;
+				font-size: 1.3em;
+			}
+			p{
+				font-family: Lato, sans-serif;
+				font-weight: 300;
+				line-height: 1.4;
+			}
+		}
+	}//end commons-updates
+}
+//end commons-info
+
+
+
+.commons-content{
+	margin-top: 2em;
+	clear:both;
+
+	h2{
+		font-size: 1.5em;
+	}
+	ul{
+		margin-left: 0;
+	}
+
+	#activity-filter{
+		margin:0 0 -12px 0;
+		select{
+			margin:0;
+		}
+	}
+
+	.activity-item{
+		overflow: hidden;
+		margin:1em 0;
+		background-color: #fff;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		list-style-type: none;
+		padding: .5em;
+
+		img.avatar{
+			width: 50px;
+			height: 50px;
+		}
+
+		.activity-avatar{
+			position:relative;
+			@media #{$small-up} {
+				@include grid-column(12);
+			}
+			@media #{$medium-up} {
+				@include grid-column($columns:2);
+
+			}
+
+			.main-actor{
+
+
+				position: relative;
+				@include pie-clearfix();
+
+				img.avatar{
+					border-radius: 10px; //remove some default border raidus foundation puts in there
+					width:75px;
+					height:75px;
+					float:none;
+				}
+			}
+
+			.secondary-actor{
+				position: absolute;
+				bottom:-20px;
+				left:50px;
+
+				img.avatar{
+					width:45px;
+					height:45px;
+				}
+			}
+		}
+
+		.activity-content{
+			@media #{$small-up} {
+				@include grid-column(12);
+			}
+			@media #{$medium-up} {
+				@include grid-column(10);
+			}
+		} //end conteent
+	}//end activity-item
+
+	.relatedContent{
+		//display none to start
+		display: none;
+		overflow: hidden;
+		background-color: #ddd;
+		padding: 6px;
+
+
+		h3{
+			font-weight: 400;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+		// padding: .5em;
+
+		img.avatar{
+			width: 50px;
+			height: 50px;
+		}
+
+		.item-list li{
+			overflow: hidden;
+			border-bottom:1px solid black;
+			margin-bottom: 1.5em;
+		}
+
+		.item-avatar{
+			@media #{$small-up} {
+				@include grid-column(12);
+			}
+			@media #{$medium-up} {
+				@include grid-column(2);
+			}
+		}
+
+		.item{
+			@media #{$small-up} {
+				@include grid-column(12);
+			}
+			@media #{$medium-up} {
+				@include grid-column(10);
+			}
+
+			.item-title{
+				font-size: 1.4em;
+				@media #{$small-up} {
+					@include grid-column(12);
+				}
+			}
+
+			.action{
+				width:100%;
+				float: left;
+			}
+			.group-button{
+				// @media #{$small-up} {
+				// 	@include grid-column(12);
+				// }
+				// @media #{$medium-up} {
+				// 	@include grid-column($columns:6,$push:6);
+				// }
+				position: relative;
+				float: right;
+
+			}
+			.meta{
+				@media #{$small-up} {
+					@include grid-column(12);
+				}
+				@media #{$medium-up} {
+					@include grid-column($columns:6);
+				}
+				font-size: .8em;
+			}
+
+			.item-meta{
+				clear: both;
+				@media #{$small-up} {
+					@include grid-column(12);
+				}
+				@media #{$medium-up} {
+					@include grid-column($columns:12);
+				}
+
+				span.activity {
+					border-bottom-left-radius: 0;
+					border-top-left-radius: 0;
+					border-bottom-right-radius: 0;
+					border-top-right-radius: 0;
+					font-size: .8em;
+					line-height: 1.2em;
+					margin-top: 5px;
+					color: #333;
+					padding: 2px;
+					border: 1px solid #e1ca82;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 3px;
+					font-weight: normal;
+					margin-top: 3px;
+					text-decoration: none;
+					background: #ffeaa6;
+					background-image: -webkit-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+					background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, .5)), color-stop(100%,rgba(255, 255, 255, 0)));
+					background-image: -moz-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+					background-image: -ms-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+					background-image: -o-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+					background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+				}
+			}
+			.item-desc{
+				@media #{$small-up} {
+					@include grid-column(12);
+				}
+			}
+		} //end conteent
+	}//end activity-item
+
+	.button, .generic-button{
+		background: #fff;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed));
+		background: -webkit-linear-gradient(top, #ffffff 0%,#ededed 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ededed 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ededed 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+		background: linear-gradient(top, #ffffff 0%,#ededed 100%);
+		border: 1px solid #ccc;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color: #777;
+		cursor: pointer;
+		font: normal 12px/20px Arial, Tahoma, Verdana, sans-serif;
+		outline: none;
+		padding: 4px 10px;
+		text-align: center;
+		text-decoration: none;
+		line-height: 14px;
+	} //end commons content button
+
+	.load-more{
+		background-color: $primary-color !important;
+		color: #f0f0f0 ;
+		border-right: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		font-size: 1.2em;
+		margin: 15px 0 !important;
+		padding: 10px 15px !important;
+		text-align: center;
+		list-style-type: none;
+		a{
+			color: #f0f0f0 ;
+		}
+	}
+}//end commons-content
+
+
+
+
+.side-content{
+	//look in app.css for some extra, need to incorporate later
+
+	// background-color: #fff;
+	padding:.5em;
+
+	h2{
+		font-size: 1.5em;
+	}
+
+	.side-nav {
+		li.heading {
+			color: #008CBA;
+			font-size: 0.77778rem;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		li.divider{
+			border-top-color: #ccc;
+		}
+
+		.count{
+			background: #1fb3dd;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			color: #fff;
+			display: inline;
+			font-size: 90%;
+			margin-left: 2px;
+			padding: 1px 6px;
+		}
+
+        .alert{
+            background-color: #f04124;
+        }
+
+	}
+
+	.divider{
+		//repeated to be able to use again
+		border-top-color: #ccc;
+		border-top: 1px solid;
+		height: 0;
+		padding: 0;
+		list-style: none;
+		margin-top: .5em;
+	}
+
+	.commons-info{
+		background-color: #333;
+		padding: .5em;
+		color:#fff;
+	}
+
+	.following{
+		margin-left: 0;
+
+		li{
+			margin-bottom: 1em;
+			list-style-type: none;
+			margin-left: 0;
+		}
+	}
+
+	.whos-online{
+		.thumbs {
+		  @include block-grid(
+		    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+		    // Available options: 1-12 by default, and false.
+		    $per-row: 4,
+
+		    // This controls how much space is between each item in the block grid.
+		    // Use a variable or any pixel or em values.
+		    $spacing: 20px,
+
+		    // This controls whether or not base styles come through, set to false to leave out.
+		    $base-style: true
+		  );
+		}
+	}
+	//end whos-online
+}
+//end side-content
+
+
+.commons-card{
+	overflow: hidden;
+	margin: 1em 0;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: .5em;
+}
+
+
+
+// @media #{$small-up} {
+// 	@include grid-column(12);
+// }
+
+
+// border-radius: 3px;
+// font-weight: normal;
+// background: #008CBA;
+// padding: 0.16667rem 0.88889rem;
+// cursor: default;
+// color: #fff;
+
+
+	// @include grid-column(
+	// 				    // Control the number of columns
+	// 				    $columns:6,
+	// 				    // Specify whether or not this is the last column in the row
+	// 				    $last-column:true
+	// 				    // Choose whether or not to center this column
+	// 				    // $center:true,
+	// 				    // Choose the number of columns to offset this element by
+	// 				    // $offset:6
+	// 				    // Specify how many columns to push this element past
+	// 				    // $push:6,
+	// 				    // Specify how many columns to pull this element past
+	// 				    // $pull:9,
+	// 				    // Set to true to remove column padding
+	// 				    // $collapse:true,
+	// 				    // Specify the float direction
+	// 				    // $float:right
+	// 				  );
+

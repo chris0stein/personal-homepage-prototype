@@ -1,0 +1,18 @@
+.intro {
+
+	h3,h4{
+		clear:both;
+		margin:1em 0 .2em 0;
+	}
+	img{
+		float: left;
+	}
+	p.image{
+		overflow: hidden;
+	}
+	.section{
+		@include column-count(2);
+		@include column-gap($column-gutter);
+	}
+
+}

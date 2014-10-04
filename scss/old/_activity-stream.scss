@@ -1,0 +1,202 @@
+#exampele-to-use-delete-later{
+	.custom-grid-class {
+	  @include grid-column(
+	    // Control the number of columns
+	    $columns:4,
+	    // Specify whether or not this is the last column in the row
+	    $last-column:true,
+	    // Choose whether or not to center this column
+	    $center:true,
+	    // Choose the number of columns to offset this element by
+	    $offset:3,
+	    // Specify how many columns to push this element past
+	    $push:3,
+	    // Specify how many columns to pull this element past
+	    $pull:9,
+	    // Set to true to remove column padding
+	    $collapse:true,
+	    // Specify the float direction
+	    $float:right
+	  );
+	}
+
+	@media #{$medium-up} {
+		@include grid-column($columns:2, $collapse:true);
+	}
+
+	.custom-row-class {
+	  @include grid-row();
+	  .custom-column-class {
+	    @include grid-column(12);
+	  }
+	}
+
+	.your-class-name {
+	  @include grid-row($behavior: nest) // Other options include collapse and nest-collapse.
+	  // Default $behavior value is false
+	}
+}		
+
+#activity-stream{
+	
+	.activity-item{
+		margin-bottom: 2rem;
+		@include legacy-pie-clearfix;
+		padding-bottom: 2em;
+
+		.activity-header{
+			@include grid-row();
+			// background-color: #eee;
+			// border-radius: 5px;
+			.activity-avatar{
+				@media #{$small-up} {
+					// @include grid-column($columns:2, $collapse:true);
+					@include grid-column($columns:2);
+
+				}
+
+				img{
+				  width: auto; 
+				  max-width: 100%; 
+				  height: auto;
+				}
+
+				.main-actor{
+					img.avatar{
+						border-radius: 10px;
+						width: 75px;
+						height: 75px;
+						float: none;
+					}
+
+					.secondary-actor {
+						
+
+						img.avatar {
+							width: 45px;
+							height: 45px;
+						}
+					}
+				}
+
+				
+			}
+			
+
+
+			.activity-action{
+				@media #{$small-up} {
+					// @include grid-column($columns:10, $collapse:true);
+					@include grid-column($columns:10);
+
+				}
+				.actor-name{
+					@media #{$small-up} {
+						@include grid-column($columns:8, $collapse:true);
+					}
+
+					font-weight: 900;
+					font-size: 1.2em;
+				}
+
+				.activity-time{
+
+					@media #{$small-up} {
+						@include grid-column($columns:4, $collapse:true);
+					}
+					color: #888;
+
+
+					p{
+						font-size: .8rem;
+						font-style: italic;
+						text-align: right;
+						color:#888;
+					}
+				}
+
+				.activity-description{
+					color: #888;
+					p{
+						color:#888;
+					}
+					// border-bottom: 1px solid #eee;
+					@media #{$small-up} {
+						@include grid-column($columns:12, $collapse:true);
+					}
+
+
+
+				}
+			}
+		}
+		//end .activity-header ==============================
+		
+
+		.header-2{
+				background-color: #eee;
+		}
+
+		.activity-details{
+			@include grid-row();
+			margin-top: .5rem;
+
+			.featured-image{
+				height:150px;
+				overflow: hidden;
+
+				@media #{$small-up} {
+					@include grid-column($columns:12);
+
+				}
+
+				@media #{$medium-up} {
+					@include grid-column($columns:10, $push:2);
+
+				}
+			}
+
+			.activity-inner{
+				// border-top: 1px solid #eee;
+				padding-top: .5em;
+				// font-family: Merriweather, serif;
+				// font-family: Vollkorn, serif;
+				p{
+					// font-family: Merriweather, serif;	
+					// font-family: Vollkorn, serif;
+				}
+
+				@media #{$small-up} {
+					@include grid-column($columns:12);
+
+				}
+
+				@media #{$medium-up} {
+					@include grid-column($columns:10, $push:2);
+
+				}
+			}
+		}
+		//end activity details ==============================
+
+	}
+	//end .activity-item ===============================
+}
+//end #activity-stream
+
+#activity-stream.activity-list-2{
+	.activity-item{
+		border: 1px solid #aaa;
+		padding: 0;
+		.activity-header{
+			background-color: #dedede;
+			padding-top: 8px;
+			padding: 8px 0 1.5rem 0;
+		}
+	}
+	
+}
+
+
+
+

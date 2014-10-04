@@ -3,158 +3,97 @@
  * Edit the file and have fun.
  * http://themefortress.com/reverie */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400);
-
-// import normalize, stay at top
-// @import "normalize";
-
-// Global Foundation Settings
-@import "settings";
-
-// Tweak the mixin for WordPress, this might create some extra CSS in additional to app.css
-@import "foundation/components/pagination";
-
-// Reverie comes with a standalone Foundation stylesheet already
-// @import "foundation";
-
-// Load some Compass magic, note you will need to install Compass first
-//@import "compass/css3/shared"; //removed because throwing errors in prepros
-@import "compass/css3/deprecated-support"; //adding in place of shared to silence warnings
-@import "compass/css3/border-radius";
-@import "compass/css3/transition";
-@import "compass/css3/columns";
-@import "compass/utilities/general/clearfix";
-
-/* Start to customize Reverie */
-// the next imports are default stylings Reverie has added to help fit Foundation into WordPress
-// For the most part you can modify these where you need to or even remove the styles.
-// You can also just leave them be until one conflicts with what you want to do
-
-//In this child theme the Reverie styling has been moved to separate files and grouped by the type of content they style (see below).
-
-// define content padding for later use
-//Reverie added, to standardize padding
-//you can change but do not remove unless you also remove all
-//references to $content-padding
-$content-padding: rem-calc(50);
-
-@import "style-reverie/general";
-
-@import "style-reverie/images";
-
-@import "style-reverie/pagination";
-
-@import "style-reverie/comment";
-
-@import "style-reverie/sidebar";
-
-@import "style-reverie/footer";
-
-@import "style-reverie/breakpoint-specific";
+@import "vendor";
+@import "config";
+@import "components";
+@import "modules";
 
 
-// ==========================================
-// Default WordPress CSS classes.
+// ======================================================
+//testing debug, move later
 
-// By default WordPress adds a lot of classes to different UI elements.
-// These partials show them.
-//Uncomment the imports to use one or more of them, or copy from the files to your own styles below.
+// ----
+// Sass (v3.3.14)
+// Compass (v1.0.1)
+// ----
 
-// @import "style-wp-default/wp-body";
-// @import "style-wp-default/wp-comments";
-// @import "style-wp-default/wp-post-page";
-// @import "style-wp-default/wp-sidebar";
+// Simple string
+@debug "hello sassconf!";
+
+// Variable interpolation
+$var: "awesome";
+@debug "Sass is #{$var}";
+
+// Math (with units)
+@debug 2 * 48 + 3px;
+
+$color: red;
+@debug the color is $color; //works
+@debug "the color is $color"; //no works
+@debug "the color is #{$color}"; //works
 
 
-// ==========================================
 
-// Add your Custom CSS here. This is where you add CSS that is specific to your theme and WordPress
-// If you are looking to modify the default Foundation styles then start with the _settings.scss file
 
-body{
-	// background-color: #fff;
-	background: #000 url('images/bg-body.gif') repeat;
+
+
+// =---------
+// warning
+
+// Simple warn
+@warn "Hmmm, something went wrong.";
+
+// Warn with conditional
+$var: true;
+@if $var == true {
+  @warn "The variable passed";
 }
 
-.header{
-	margin-top:4em;
-	h2{
-		font-weight: 100;
-	}
+// Warn in a mixin
+@mixin print-var($var) {
+    @warn "#{$var}";
 }
 
-.intro {
+@include print-var("Sass is Awesome!");
 
-	h3,h4{
-		clear:both;
-		margin:1em 0 .2em 0;
-	}
-	img{
-		float: left;
-	}
-	p.image{
-		overflow: hidden;
-	}
-	.section{
-		@include column-count(2);
-		@include column-gap($column-gutter);
-	}
-
+// Example warning in a function
+@function double-width($num) {
+    
+    @if (type-of($num) != number) {
+        @warn "Deprecated: In the future, this will fail if not a number.";
+    	@error "is not a number";
+    }
+    @return $num;
 }
 
-.content{
-	background-color: #efefef;
+.button {
+    width: double-width("string");
+}
+
+// to just show the type of somethign you can use
+@warn type of is type-of(blue);
+
+
+
+
+// =========================================
+// ERROS
+
+//this wasn't compiling in Sass version I was using (3.2 I think)
+
+
+// Example error in a function
+@function double-width($num) {
+    @if (type-of($num) == number) {
+        @return $num * 2;
+    } @else {
+     //   @error "Expected a number, received a #{type-of($num)}";
+        @return null;
+    }
+}
+
+.button {
+    width: double-width("string");
 }
 
 
-
-p{
-	margin-bottom: 1em;
-}
-
-.group{
-	h2{
-		margin-top:1em;
-		padding-top:1em;
-		border-top:2px solid black;
-		// font-weight: 100;
-	}
-	h3{
-		font-weight: 100;
-		a{
-			border-bottom: 1px solid $primary-color;
-			-webkit-transition: all 400ms linear;
-			-moz-transition: all 400ms linear;
-			-o-transition: all 400ms linear;
-			transition: all 400ms linear;
-
-			&:hover{
-				font-weight: 400;
-			}
-		}
-	}
-}
-
-@import "fd_accordion";
-@import "activity-styling";
-@import "activity-separate";
-@import "activity-round2";
-@import "progress-circle";
-@import "old_activity";
-@import "activity-stream"; //this is for the finalized stream with filters on top
-
-.first{
-	padding-left:0;
-}
-.last{
-	padding-right:0;
-}
-
-.note{
-	font-size:.9em;
-	font-style: italic;
-	color:#993344;
-	padding:.5em;
-}

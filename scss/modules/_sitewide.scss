@@ -1,0 +1,63 @@
+body{
+	// background-color: #fff;
+	background: #000 url('images/bg-body.gif') repeat;
+}
+
+.header{
+	margin-top:4em;
+	h2{
+		font-weight: 100;
+	}
+}
+
+
+
+.content{
+	background-color: #efefef;
+}
+
+
+
+p{
+	margin-bottom: 1em;
+}
+
+.group{
+	h2{
+		margin-top:1em;
+		padding-top:1em;
+		border-top:2px solid black;
+		// font-weight: 100;
+	}
+	h3{
+		font-weight: 100;
+		a{
+			border-bottom: 1px solid $primary-color;
+			-webkit-transition: all 400ms linear;
+			-moz-transition: all 400ms linear;
+			-o-transition: all 400ms linear;
+			transition: all 400ms linear;
+
+			&:hover{
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+
+
+
+.first{
+	padding-left:0;
+}
+.last{
+	padding-right:0;
+}
+
+.note{
+	font-size:.9em;
+	font-style: italic;
+	color:#993344;
+	padding:.5em;
+}

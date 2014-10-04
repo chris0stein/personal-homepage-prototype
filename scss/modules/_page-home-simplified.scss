@@ -1,0 +1,82 @@
+.home-simplified{
+  .commons-content{
+    margin-top: 0;
+
+    #my-activity{
+      padding-bottom: 0;
+      p{
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+
+    //horizonatal nav with pill buttons for filters
+    .integrated-filter{
+      .side-nav{
+
+        li{
+          display: inline-block;
+          float:left;
+          line-height: 20px;
+          a{
+            padding:6px 12px;
+          }
+        }
+        li.heading{
+          padding:6px 6px 6px 0;
+        }
+
+        .selected{
+          background-color: #008cba;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          color:#fff;
+        }
+
+
+
+      }
+      //end side-nav
+    }
+
+  }
+  //end commons-content
+
+  .side-content{
+    padding-top: 0;
+
+    .side-nav{
+      .selected{
+        font-weight: 900;
+      }
+    }
+
+    #quick-links{
+        margin-top: 1em;
+      }
+
+    .integrated-filter{
+      .side-nav{
+      background-color: #008cba;
+      margin-right: -1.55rem;//-0.9375rem;
+      text-align: right;
+      padding-right: .5em;
+      li.heading{
+       color:#fff;
+      }
+      li a:not(.button){
+        color:#fff;
+      }
+
+
+
+    }
+    //end side-nav
+  }
+  //end integrated filter
+  }
+  //END SIDE CONTENT
+}
